@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header clearfix">
+            <div class="register-bar"><a href="javascript:;">立即登录</a>已经有值买账号？</div>
+            <div class="logo">
+                <a title="Z商城" href="http://10.31.157.17/js19075-8week/zol/dist/index.html"><img width="130" height="60" title="Z商城" alt="Z商城"
+                        src="http://icon.zol-img.com.cn/newshop/shop/login/logo.png">
+                    <p>中关村在线旗下导购平台</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <form id="loginForm" action="javascript:void(0)" class="wrapper">
+        <div class="login-wrap clearfix">
+            <div class="ad-div">
+                <div>
+                    <a href="" target="_blank">
+                        <img src="https://login.zol.com/image/ad2_1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="login-layer">
+                <div class="login-head clearfix">
+                    <h3 class="curLogin">登录值买</h3>
+                    <h3>商家登录</h3>
+                </div>
+                <!-- 登录Z商城 -->
+                <div class="login-select">
+                    <div class="login-content" style="display: block;">
+                        <div class="login-wrong-tips" style="display:none;">
+                            -
+                        </div>
+                        <div class="form-item username">
+                            <input type="text" value="" autocomplete="off" placeholder="手机号" class="text"
+                                id="loginUser" name="zolShopUserName" maxlength="100">
+                            <i class="remove" style="display:none;"></i>
+                            <ul style="display:none;" class="account-list" id="accountList">
+                            </ul>
+                        </div>
+                        <div class="form-item">
+                            <input type="password" placeholder="密码" class="text" maxlength="20" id="loginpas">
+                            <i class="remove" style="display:none;"></i>
+                            <span class="case-tips" id="loginCapsLock">大小写锁定已打开<i class="ico"></i></span>
+                        </div>
+                        <div class="form-other clearfix">
+                            <label class="autologon"></label>
+                            <a href="javascript:void(0)" class="otherLogin-bar mobileLogin-bar">手机动态码登录</a>
+                            <a target="_blank" href="" class="forget-password">忘记密码？</a>
+                        </div>
+                        <!-- <input type="button" value="登 录" class="login-layer-btn" id="loginBtn"> -->
+                        <a href="javascript:;"class="login-layer-btn" id="loginBtn">登 录</a>
+                    </div>
+                    <div class="login-content mobileLogin-content" style="display:none;">
+                        <div class="login-wrong-tips" style="display:none;">
+                            -
+                        </div>
+                        <!-- add by hanjw 2014-6-24 -->
+                        <div class="form-item ">
+                            <input type="text" autocomplete="off" placeholder="手机号" class="text"
+                                id="login_mobile_number" name="login_mobile_number">
+                        </div>
+                        <div class="form-item phone-number">
+                            <input type="text" placeholder="短信验证码" class="text" id="login_mobile_code"
+                                name="login_mobile_code">
+                            <input name="login_send_button" type="button" value="发送验证码" class="btn"
+                                id="login_send_button">
+                            <span class="captcha-loading" id="login_send_wait" style="display: none">100秒后重新获取</span>
+                        </div>
+                        <!-- //add by hanjw 2014-6-24-->
+                        <input type="button" value="登 录" class="login-layer-btn" id="J_loginBtn_mobile">
+                        <span style="display:none;" class="submit-loading" id="J_loginingBtn_mobie">正在登录...</span>
+                    </div>
+                    <div class="collaborate clearfix" style="display: block">
+                        <div class="xian"></div>
+                        <p>合作账号登录</p>
+                        <div class="xian"></div>
+                    </div>
+                    <div class="login-foot clearfix" style="display: block">
+                        <a target="_blank" class="weixin" href="">用微博账号登录</a>
+                        <a target="_blank" class="sina" href="">用微博账号登录</a>
+                        <a target="_blank" class="qq" href="">用QQ账号登录</a>
+                        <a target="_blank" class="alipay" href="">用支付宝账号登录</a>
+                        <a target="_blank" class="baidu" href="">用百度账号</a>
+                    </div>
+                </div>
+                <!-- 商家登录 -->
+                <div class="login-select" style="display:none;">
+                    <div class="login-content" id="login_common">
+                        <div class="login-wrong-tips" id="login-wrong-tips-merchant" style="display:none;">
+                            -
+                        </div>
+                        <div class="form-item username">
+                            <input type="text" value="" autocomplete="off" placeholder="用户名" class="text"
+                                id="loginUser_Merchant" name="MerchantName" maxlength="100">
+                            <i class="remove" style="display:none;"></i>
+                            <ul style="display:none;" class="account-list" id="accountList">
+                            </ul>
+                        </div>
+                        <div class="form-item">
+                            <input type="password" autocomplete="off" placeholder="密码" class="text"
+                                id="loginPsw_Merchant" maxlength="20">
+                            <i class="remove" style="display:none;"></i>
+                            <span class="case-tips" id="loginCapsLock">大小写锁定已打开<i class="ico"></i></span>
+                        </div>
+                        <div class="form-other clearfix">
+                            <label class="autologon"></label>
+                            <a target="_blank" href="http://dealer.zol.com.cn/merchant_get_pwd.php"
+                                class="forget-password">忘记密码？</a>
+                        </div>
+                        <input type="hidden" value="1" name="login_type_Merchant" id="login_type_Merchant">
+                        <input type="button" value="登 录" class="login-layer-btn" id="loginBtn_Merchant">
+                        <span style="display:none;" class="submit-loading" id="loginingBtn_Merchant">正在登录...</span>
+                    </div>
+                    <div class="login-content mobileLogin-content" id="login_mobile" style="display:none;">
+                        <div class="login-wrong-tips" id="login-mobile-wrong-tips" style="display:none;">
+                            -
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="about">
+                <a href="" target="_blank">关于Z商城</a>|<a href="" target="_blank">联系我们</a>|<a href=""
+                    target="_blank">帮助中心</a>
+            </div>
+            <div class="copyright">©2019. 中关村在线 版权所有</div>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

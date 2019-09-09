@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header clearfix">
+            <div class="register-bar"><a href="http://10.31.157.17/js19075-8week/zol/dist/login.html">立即登录</a>已经有值买账号？</div>
+            <div class="logo">
+                <a title="Z商城" href=""><img width="130" height="60" title="Z商城" alt="Z商城"
+                        src="http://icon.zol-img.com.cn/newshop/shop/login/logo.png">
+                    <p>中关村在线旗下导购平台</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="register-wrap wrapper clearfix">
+        <div class="title">30秒快速注册，加入值买</div>
+        <form id="form" action="" method="">
+            <div class="register-module">
+                <ul class="register-tab clearfix">
+                    <li class="current">
+                        <span class="phone-number">用手机号注册</span>
+                    </li>
+                </ul>
+                <div class="register-phone-number">
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>手机号：</div>
+                        <input name="phone_number" id="phone_number" type="text" class="text">
+                        <i class="right-tips"></i>
+                        <i class="wrong-tips">手机号填写错误请重新填写</i>
+                        <div class="tips">请填写手机号码</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>验证码：</div>
+                        <div class="sms-captcha clearfix">
+                            <input name="phone_code" id="phone_code" type="text" class="text">
+                            <input name="phone_send" id="phone_send" type="button" value="获取数字验证码" class="get-captcha">
+                            <span class="codenum"></span>
+                        </div>
+                        
+                        <i class="right-tips"></i>
+                        <i class="wrong-tips"id="phone_code_tips">验证码错误，请重新输入</i>
+                        <div class="tips">请填写手机号码，然后点击[获取验证码]</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label">
+                            <em class="xh">*</em>密码：</div>
+                        <input name="pasword_phone" id="pasword_phone" type="password" class="text">
+                        <i class="right-tips" id="pasword_phone_tips"></i>
+                        <i class="wrong-tips"id="phone_code_tips">密码格式不正确</i>
+                        <div class="tips">6-16位字母和数字的组合，不可用特殊字符，必须以字母开头</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>确认密码：</div>
+                        <input name="reg_pasword_phone" id="regPasword_phone" type="password" class="text">
+                        <i class="right-tips" id="pasword_phone_tips"></i>
+                        <i class="wrong-tips" style="display:none;" id="regPasword_phone_tips"></i>
+                        <div class="tips">再次输入密码</div>
+                    </div>
+                    <label class="agreement">
+                        <input type="checkbox" value="1" name="regRead_phone" id="regRead_phone" checked="">同意<a href=""
+                            target="_blank">《商城用户协议》</a><a href="" target="_blank" class="xy_a">《隐私权说明》</a>
+                    </label>
+                    <a href="javascript:;"id="phone_submit" class="register-btn">注册</a>
+                    <!-- <input name="phone_submit" type="button" value="注册" class="register-btn" > -->
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="about">
+                <a href="" target="_blank">关于Z商城</a>|<a href="" target="_blank">联系我们</a>|<a href=""
+                    target="_blank">帮助中心</a>
+            </div>
+            <div class="copyright">©2019. 中关村在线 版权所有</div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

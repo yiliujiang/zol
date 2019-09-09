@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/detail-header.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header clearfix">
+        <!-- 头部最上面 -->
+        <div class="header-top-war">
+            <div class="wrapper clearfix header-top">
+                <div class="zc-login-info">
+                    <span class="zc-back-home">
+                        <a href="">商城首页</a>
+                    </span>
+                    <span class="zc-login">Hi~欢迎来到Z商城，请</span> 
+                    <a href="http://10.31.157.17/js19075-8week/zol/dist/login.html" class="login-now">登录</a>
+                    <span class="zc-register">
+                        <a href="http://10.31.157.17/js19075-8week/zol/dist/register.html">免费注册
+                        </a>
+                    </span>
+                </div>
+                <ul class="zc-quick-menu">
+                    <li>
+                        <a href="">我的订单</a>
+                    </li>
+                    <li class="zc-my-center">
+                        <a href="" class="zc-hd">买家中心
+                            <i class="ico"></i>
+                        </a>
+                        <div class="zc-my-center-bd" id="zc-my-center-bd">
+                            <a href="#" style="display:none;">我的优惠券&nbsp;&nbsp;<em>8</em>
+                            </a>
+                            <a href="">关注的店铺&nbsp;&nbsp;
+                                <em id="focusShopNum">30</em>
+                            </a>
+                            <a href="">关注的商品&nbsp;&nbsp;
+                                <em id="focusGoodsNum">49</em>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" id="shop-cart-num">购物车1件</a>
+                    </li>
+                    <li>
+                        <a href="">帮助中心</a>
+                    </li>
+                    <li class="zc-separator">|</li>
+                    <li class="zc-mobile">
+                        <a href="javascript:;" class="zc-hd zc-mobile-hd">手机商城
+                            <i class="ico"></i>
+                        </a>
+                        <div class="zc-mobile-bd" id="zc-mobile-bd">
+                            <img src="http://icon.zol-img.com.cn/zol_shop_logo/shop_wechat.png">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">中关村在线</a>
+                    </li>
+                    <li><a href="">招商合作</a></li>
+                    <li class="lianxikefu">
+                        <a href="javascript:;" class="zc-hd">联系客服
+                            <i class="ico"></i>
+                        </a>
+                        <div class="zc-service-tel">010-83417888-9185</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 头部中间搜索框 -->
+        <div class="tuangou-search wrapper clearfix">
+            <h1 class="tuan-head"><a href="">ZOL商城</a></h1>
+            <div class="quick-entry">
+                <a href="" class="cart">购物车<i class="ico"></i><em class="number">1</em></a>
+                <a href="" class="coupon">我的优惠券<i class="ico"></i></a>
+                <a href="" class="order">我的订单<i class="ico"></i></a>
+            </div>
+            <div class="search-box">
+                <form action="" method="GET">
+                    <div class="search" id="serch">
+                        <input type="hidden" value="List" name="c">
+                        <input type="hidden" value="TuanSearch" name="a">
+                        <input name="searchName" id="search-text" type="text" class="search-text" autocomplete="off"
+                            placeholder="找找您想要的商品">
+                        <input type="submit" value="搜索" class="search-btn" hidefocus="true">
+                        <!-- 搜索热词 搜索推荐 -->
+                        <ul class="search-hot-tuan clearfix">
+                            <li><a href="">华为手机</a>
+                            </li>
+                            <li><a href="">DIY主机降1000元</a>
+                            </li>
+                            <li><a href="">畅玩7X立省130元</a>
+                            </li>
+                            <li><a href="">超极本降1400元</a>
+                            </li>
+                            <li><a href="">华为Mate
+                                    10</a></li>
+                        </ul>
+                        <!-- end -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 头部最下面的导航栏 -->
+        <div class="header-nav-box clearfix">
+            <div class="wrapper" style="position: relative;">
+                <ul class="nav clearfix">
+                    <li class="current"><a href="">团购</a></li>
+                    <li><a href="" target="_blank">9块9包邮</a></li>
+                </ul>
+                <div id="category-nav" class="category-nav">
+                    <div class="category-nav-header">全部分类<i class="ico"></i></div>
+                    <div class="category-nav-body">
+                        <div class="category-items" id="category-items">
+                            <div class="item">
+                                <h3><a href="">手机</a><i></i></h3>
+                                <i class="icon-01"></i>
+                            </div>
+                            <div class="item">
+                                <h3><a href="">电脑</a><i></i></h3>
+                                <i class="icon-02"></i>
+                            </div>
+                            <div class="item">
+                                <h3><a href="">DIY</a><i></i>
+                                </h3>
+                                <i class="icon-07"></i>
+                            </div>
+                            <div class="item">
+                                <h3><a href="">数码</a><i></i></h3>
+                                <i class="icon-03"></i>
+                            </div>
+                            <div class="item">
+                                <h3><a href="">外设</a><i></i></h3>
+                                <i class="icon-04"></i>
+                            </div>
+                            <div class="item">
+                                <h3><a href="">智能</a><i></i></h3>
+                                <i class="icon-05"></i>
+                            </div>
+                            <div class="item">
+                                <h3><a href="">其他</a><i></i></h3>
+                                <i class="icon-06"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--主体 部分 -->
+    <div class="main">
+        <!-- 商品详情部分 -->
+        <div class="wrapper goods-detail">
+            <div class="catalog">
+                <a href="">首页</a>&gt;
+                <a href="">显卡</a>&gt;<span>七彩虹</span>
+            </div>
+            <div class="zs-detail clearfix">
+                <!-- 商品详情信息 -->
+                <div class="zs-deal-detail">
+                    <!-- 放大镜部分 -->
+                    <div class="zs-focus">
+                        <div id="spic">
+                            <img src="" alt="" style="width:400px;height:400px">
+                            <div id="sf"></div>
+                        </div>
+                        <div id="bf" style="height: 400px;width: 400px;">
+                            <img src="" alt="" id="bpic">
+                        </div>
+                        <div class="zs-focus-thumb">
+                            <div class="zs-focus-list" id="zs-focus-list">
+                                <ul>
+                                    <!-- 渲染的数据  小图 -->
+                                    <!-- <li>
+                                        <a href="javascript:;">
+                                            <img
+                                                src=""></a>
+                                        <i class="border"></i>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 分享收藏 -->
+                        <div class="zs-action clearfix">
+                            <a href="" class="zs-collect"><i></i>关注商品</a>
+                            <div class="zs-share-box">
+                                <a href="" class="zs-complain"><i></i>分享</a>
+                                <div style="display: none;"
+                                    class="bdsharebuttonbox bdshare_t bds_tools get-codes-bdshare bdshare-button-style0-16"
+                                    id="bdshare">
+                                    <a class="bds_tsina" title="分享到新浪微博"></a>
+                                    <a class="bds_weixin" title="分享到微信"></a>
+                                    <a class="bds_qzone" title="分享到QQ空间"></a>
+                                    <a class="bds_tqq" title="分享到腾讯微博"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- //分享收藏 -->
+                        <p class="detail-tips_wen">* 请勿私下交易，以免造成财物两空！</p>
+                    </div>
+                    <!-- 商品分类信息 -->
+                    <div class="zs-deal-wrap">
+                        <!-- 商品标题 -->
+                        <h3 class="zs-commodity-title" id="goods-title">
+                        </h3>
+                        <div class="zs-group-box">
+                            <div class="range-logo">
+                                <a href="#" class="mall-logo">|</a>
+                                <a href="#" class="group-logo"></a>
+                            </div>
+
+                            <!-- 倒计时 -->
+                            <div class="group-over-time" end-time="1567390428">距结束仅剩 <span class="time-day">1天</span> <span
+                                    class="time-hour">17</span> : <span class="time-min">42</span> : <span
+                                    class="time-sec">17</span></div>
+                        </div>
+                        <div class="zs-price-panel">
+                            <dl class="zs-sale-price">
+                                <dt>团&nbsp;&nbsp;购&nbsp;&nbsp;价：</dt>
+                                <dd class="clearfix">
+                                    <span class="zs-price">
+                                        ¥ <em id="zp-goods-price"></em>
+                                    </span>
+                                    <span class="original" id="zp-goods-reprice">￥</span>
+                                    <span class="save-icon">立省<span class="save-icon-num"></span>元</span>
+
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- //价格 -->
+                        <!-- 交易区块 -->
+                        <div class="zs-detail-infor">
+                            <dl class="zs-freight-a">
+                                <dt>配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送：</dt>
+                                <dd class="clearfix">
+                                    <div class="zs-freight-area">
+                                        <div class="area-selected-wrap clearfix">
+                                            <div class="area-selected">
+                                                <span class="area-name">
+                                                    浙江 </span>
+                                                <div class="selecet-layer-wrap">
+                                                    <a class="close"></a>
+                                                    <ul class="selecet-tab clearfix">
+                                                        <li class="current">
+                                                            <span>浙江</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="area-list-wrap">
+                                                        <div class="area-list clearfix province"
+                                                            style="display: block;">
+                                                            <a href="javascript:;" provinceid="1">北京</a>
+                                                            <a href="javascript:;" provinceid="2">上海</a>
+                                                            <a href="javascript:;" provinceid="3">天津</a>
+                                                            <a href="javascript:;" provinceid="4">重庆</a>
+                                                            <a href="javascript:;" provinceid="5">黑龙江</a>
+                                                            <a href="javascript:;" provinceid="6">辽宁</a>
+                                                            <a href="javascript:;" provinceid="7">吉林</a>
+                                                            <a href="javascript:;" provinceid="8">河北</a>
+                                                            <a href="javascript:;" provinceid="9">内蒙</a>
+                                                            <a href="javascript:;" provinceid="10">陕西</a>
+                                                            <a href="javascript:;" provinceid="11">山西</a>
+                                                            <a href="javascript:;" provinceid="12">甘肃</a>
+                                                            <a href="javascript:;" provinceid="13">宁夏</a>
+                                                            <a href="javascript:;" provinceid="14">新疆</a>
+                                                            <a href="javascript:;" provinceid="15">西藏</a>
+                                                            <a href="javascript:;" provinceid="16">青海</a>
+                                                            <a href="javascript:;" provinceid="17">四川</a>
+                                                            <a href="javascript:;" provinceid="18">云南</a>
+                                                            <a href="javascript:;" provinceid="19">贵州</a>
+                                                            <a href="javascript:;" provinceid="20">湖南</a>
+                                                            <a href="javascript:;" provinceid="21">湖北</a>
+                                                            <a href="javascript:;" provinceid="22">河南</a>
+                                                            <a href="javascript:;" provinceid="23">山东</a>
+                                                            <a href="javascript:;" provinceid="24">安徽</a>
+                                                            <a href="javascript:;" provinceid="25">江苏</a>
+                                                            <a href="javascript:;" provinceid="26">浙江</a>
+                                                            <a href="javascript:;" provinceid="30">广东</a>
+                                                            <a href="javascript:;" provinceid="31">广西</a>
+                                                            <a href="javascript:;" provinceid="32">江西</a>
+                                                            <a href="javascript:;" provinceid="33">福建</a>
+                                                            <a href="javascript:;" provinceid="34">海南</a>
+                                                        </div>
+                                                        <div class="area-list clearfix city" style="display:none;">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="area-selected-box">
+                                                <!-- 顺丰包邮 -->
+                                                <div class="area-selected-infor" style="display: block;">可送达，<strong
+                                                        class="bold">快递包邮</strong>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="zs-freight" style="z-index:1;display:none;">
+                                <dt>服务保障：</dt>
+                                <dd class="clearfix">
+                                    <a href="http://go.zol.com/topic/3056598.html" target="_blank"> <img
+                                            src="http://icon.zol-img.com.cn/newshop/server/1.png" align="absmiddle"
+                                            title="ZOL用户保障服务:7天退换货" border="0"></a>&nbsp;&nbsp;支持七天无理由退换货
+                                </dd>
+                            </dl>
+
+                            <dl class="zs-service-bar" style="z-index:1;">
+                                <dt>服务保障：</dt>
+                                <dd class="clearfix">由&nbsp;<span style="color:#ff0000;"><a href="" target="_blank"
+                                            class="link" id="zs_shop_url">锦鑫科技电脑专营店</a></span>&nbsp;发货并承诺提供以下服务保障</dd>
+                                <dd>
+                                    <ul class="clearfix">
+
+                                        <li><a href="" target="_blank"><i class="iconfont"></i>正品保障</a></li>
+                                        <li><a href=""><i
+                                                    class="iconfont"></i>发票保障</a></li>
+
+                                        <li><a href=""
+                                                target="_blank"><i class="iconfont"></i>无忧退换</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+
+                            <div class="zs-skin-inner">
+                                <div class="zs-hd">选择您要的商品信息<i class="zs-close"></i></div>
+                                <div class="groupware-type-box">
+                                    <div class="groupware-type">
+                                        <span class="show-more" style="display:none">展开</span>
+                                        <dl>
+                                            <dt>团购商品：</dt>
+                                            <dd>
+                                                <ul class="ware-type-list clearfix">
+                                                    <li style="border-color: red">
+                                                        <span class="icon">团</span> 黑色 </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <!-- 版本选择 -->
+                                <!-- 颜色类别 -->
+                                <dl class="zs-colour-type">
+                                    <dt>商品颜色：</dt>
+                                    <dd>
+                                        <ul class="zs-options clearfix" id="zp-choose-color">
+                                            <li class="cur" num="1" fn="" data-val="21">
+                                                <span class="can-buy">黑色<i></i></span>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <!--版本内存-->
+                                <!-- 销售类型 -->
+                                <!-- 套装 -->
+                                <dl class="zs-suit">
+                                    <dt>套&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;装：</dt>
+                                    <dd>
+                                        <ul class="zs-options clearfix" id="zp-choose-suit">
+
+                                            <li class="cur" fn="" num="3" data-val="1">
+                                                <span class="can-buy">官方标配<i></i></span>
+                                            </li>
+                                        </ul>
+                                        <!--合约机套餐-->
+                                        <div class="zs-suit-infor" id="zp-suit-call" style="display:none">0</div>
+                                        <!--合约机套餐end-->
+                                        <!-- 套装详情 -->
+                                        <div class="zs-suit-infor" id="zp-suit-desc"></div>
+                                        <!-- 详情end -->
+                                    </dd>
+                                </dl>
+
+                                <!-- 购买数量 -->
+                                <dl class="zs-quantity">
+                                    <dt>购买数量：</dt>
+                                    <dd class="clearfix">
+                                        <div class="amount-widget">
+                                            <span class="zs-decrease zs-no-decrease"></span>
+                                            <input name="zp-goods-number" type="text" title="请输入购买量" value="1"
+                                                class="zs-goods-number" id="zp-goods-number" fn="zp-goods-number">
+                                            <span class="zs-increase"></span>
+                                        </div>
+                                        <span class="zs-part">件<em class="zs-goods-number-show1">（限购99件）</em></span>
+                                        <span class="zs-goods-number-tips" id="zs-goods-number-tips"
+                                            style="display:none;"></span>
+                                    </dd>
+                                </dl>
+                                <!-- 购买数量end -->
+                                <!-- 立即购买 -->
+                                <div class="zs-deal-btn clearfix">
+                                    <!-- 屏蔽戴尔在线交易-->
+                                    <a style="cursor:pointer;" title="立即购买" class="zs-buy-now" id="buynow">立即购买</a>
+                                    <a href="javascript:;" class="zs-store-buy" title="加入购物车">加入购物车</a>
+                                    <!-- 看测评 -->
+                                    <!--<a style="cursor:pointer;" title="看评测" class="zs-look-comment">看评测<i class="new_icon"></i></a>-->
+                                    <a href="javascript:;" class="zs-confirm-btn" style="display:none;">确认</a>
+                                </div>
+                                <!-- 立即购买end -->
+                            </div>
+                        </div>
+                        <!-- //交易区块 -->
+
+                    </div>
+                    <!-- 点击加入购物车后显示的悬浮窗 -->
+                    <div class="zs-layer-box" id="zs-shop-cart-box">
+                        <div class="zs-layer-body">
+                            <div class="zs-layer-hd"><i class="zs-close"></i></div>
+                            <div class="zs-layer-content">
+                                <div class="zs-success">
+                                    <h3>商品已成功添加至购物车</h3>
+                                    <p>购物车共有<em id="zs-cart-number">3</em>类商品，总价<em class="zs-total-price" id="zs-total-price">17991</em>元
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="zs-layer-foot">
+                                <a href="javascript:;" class="back-cart">去购物车结算</a>
+                                <a href="javascript:;">继续购物</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 热门团购推荐 -->
+                <div class="zs-store-infor">
+                    <div class="group-recommend-region">
+                        <div class="group-rec-hd">
+                            <h5 class="tl">热门团购推荐</h5>
+                            <a href="javascript:;" class="change">换一组</a>
+                        </div>
+                        <ul class="group-rec-list" id="group-rec-list">
+                            <!-- <li>
+                                <a href="http://www.zol.com/detail/vga/galaxy/33501848.html?skuId=14161036" class="pic">
+                                    <img src="http://2b.zol-img.com.cn/product/195_168x168/515/ceiX7TLTF26wI.jpg"
+                                        alt="影驰 GeForce RTX 2060 大将 黑色">
+                                </a>
+                                <p class="ware-name">
+                                    <a href="http://www.zol.com/detail/vga/galaxy/33501848.html?skuId=14161036">影驰
+                                        GeForce RTX
+                                        2060 大将 黑色</a>
+                                </p>
+                                <div class="price">
+                                    <span class="now">￥2386.00</span>
+                                    <span class="original">￥2586.00</span>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- main主体部分下半部分 -->
+        <div class="wrapper clearfix" style="overflow: hidden">
+            <!-- 左侧信息 -->
+            <div class="zs-side" id="zs-side-left">
+                <!--同类热卖推荐-->
+                <div class="zs-modbox" id="store-promo-goods">
+                    <div class="zs-modbox-hd">同类热卖推荐</div>
+                    <ul class="zs-sales-news" id="hot-goods-list">
+                        <!-- <li>
+                            <a href="" class="z_lookmore_class" target="_blank">
+                                <img src="https://mercrt-fd.zol-img.com.cn/t_s168x168/g5/M00/01/0B/ChMkJlnVrE6IL44BAAIgKyKcLAsAAhByAEmfJkAAiBD845.jpg"
+                                    alt="华硕 FL8000UQ8550（4GB/1TB）15.6英寸顽石5代游戏娱乐笔记本电脑" border="0">
+                            </a>
+                            <div class="zs-price">
+                                <span class="zs-sale-price">¥<em>4399</em></span>
+                            </div>
+                            <span class="title"><a href="" class="z_lookmore_class" target="_blank">华硕
+                                    FL8000UQ8550（4GB/1TB）15.6英寸顽石5代游戏娱乐笔记本电脑</a></span>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!--同类热卖推荐-->
+                <!--最新开团-->
+                <div class="zs-modbox" id="store-promo-goods">
+                    <h2 class="zs-modbox-hd">最新开团</h2>
+                    <ul class="zs-sales-news" id="promo-goods-list">
+                        <!-- <li>
+                            <a class="sc_left_cuxiao_class" href="" target="_blank">
+                                <img src="http://2b.zol-img.com.cn/product/197_168x168/85/ceG0GN5swdizo.jpg" border="0"
+                                    width="168px">
+                            </a>
+                            <div class="zs-price">
+                                <span class="zs-sale-price">¥<em>5199.00</em></span>
+                                <span class="zs-original-price">¥<em>5699.00</em></span>
+                            </div>
+                            <span class="title">
+                                <a href="">ThinkPad New S2
+                                    2019（20NVA000CD） 银色</a></span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 商品的各种详细参数 -->
+            <div class="zs-main">
+                <div class="zs-tabbar zs-tabbar-nav clearfix" id="zsTabbar" style="width:990px;">
+                    <ul class="clearfix" id="zp-tabbar">
+                        <li id="hides">
+                            <a href="javascript:;">商品详情</a></li>
+                        <li class="active"><a href="javascript:;">参数</a></li>
+                        <li class=""><a href="javascript:;">购买评价<em id="zp-nav-order-review">0</em></a></li>
+                        <li class="">
+                            <a href="javascript:;">成交记录<em id="zp-nav-order-record">0</em></a></li>
+                        <li class=""><a href="javascript:;">购买咨询</a></li>
+                        <li class="promise"><a href="javascript:;"><span class="add-plus"></span>服务承诺</a></li>
+                        <li class="phone-purchase-code">
+                            <div class="phone-purchase">
+                                <a href="javascript:;">手机购买<i class="ico"></i></a>
+                                <div class="code"><img
+                                        src="http://qr.fd.zol-img.com.cn/qrcode/qrcodegen.php?&sizeNum=2&url=http%3A%2F%2Fm.zol.com%2Fshop_211302%2F33501647.html&token=0ca9fc9ca8">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="zs-buy-btn">
+                            <span style="cursor:pointer;" id="nav-buynow" class="zs-btn">立即购买</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="zs-container">
+                    <!-- 商品详情 -->
+                    <div class="zs-goods-detail" id="zp-goods-detail">
+                        <ul class="zs-attributes-list">
+                            <li><span>官方标配：</span>官方标配</li>
+                        </ul>
+                        <div class="sevice-title" id="pro-show">
+                            <span class="title">商品介绍</span><span class="english-title">Products</span>
+                        </div>
+                        <div class="service-content">
+                            <div class="zs-goods-content" id="zs-tab-goods-content" style="display: block;">
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWV1bmK-ICQIrAAEXKvDi4HEAAMqxQFjqyEAARdC933.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWV1bmLCIG0T6AADJ3jN3iywAAMqxQF2IGsAAMn2352.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWl1bmLGIEPk4AADBVfbwQMwAAMqxQF8Ud8AAMFt647.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWl1bmLKIOpGaAABzUpQVH0EAAMqxQF-nLUAAHNq874.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWV1bmLSICmSZAACiYAQLn0oAAMqxQGBQZYAAKJ4594.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWl1bmLWID5n-AABYRd0YR2sAAMqxQGGd0MAAFhd069.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWV1bmLaIYY2-AAESAtrC75oAAMqxQGJ2uIAARIa164.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWl1bmLeIXRXlAAClRKYO3ZcAAMqxQGLy_gAAKVc953.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWl1bmLiIbW-RAAChsTQBw6YAAMqxQGObkAAAKHJ399.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWV1bmLmIDNgMAACYk2Nht6UAAMqxQGTkJMAAJir741.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWl1bmLuIa2Z4AADLinYMZb4AAMqxQGZLT8AAMui223.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWl1bmLyIcVx6AACbL55JnaMAAMqxQGdTKkAAJtH846.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWV1bmL2IZxi6AAB6rtY0vOQAAMqxQGeuUkAAHrG745.jpg">
+                                </p>
+                                <p><img
+                                        src="https://mercrt-fd.zol-img.com.cn/g2/M00/0C/06/ChMlWV1bmL6IX_lYAACB-XoUS_UAAMqxQGnDnMAAIIR253.jpg">
+                                </p>
+                                <p><br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //商品详情切换 -->
+
+                    <!-- 参数切换 -->
+                    <div class="zs-parameter" id="zp-tab-goods-params">
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">基本参数</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">上市时间</td>
+                                    <td class="zs-parameter-infor">2018年12月</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">产品类型</td>
+                                    <td class="zs-parameter-infor">商用</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">产品定位</td>
+                                    <td class="zs-parameter-infor">轻薄笔记本，商务办公本</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">操作系统</td>
+                                    <td class="zs-parameter-infor">预装Windows 10</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">处理器</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">CPU系列</td>
+                                    <td class="zs-parameter-infor">英特尔 酷睿i5 8代系列</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">CPU型号</td>
+                                    <td class="zs-parameter-infor">Intel 酷睿i5 8265U</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">CPU主频</td>
+                                    <td class="zs-parameter-infor">1.6GHz</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">最高睿频</td>
+                                    <td class="zs-parameter-infor">3.9GHz</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">核心/线程数</td>
+                                    <td class="zs-parameter-infor">四核心/八线程</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">三级缓存</td>
+                                    <td class="zs-parameter-infor">6MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">总线规格</td>
+                                    <td class="zs-parameter-infor">OPI 4 GT/s</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">核心架构</td>
+                                    <td class="zs-parameter-infor">Whiskey Lake</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">制程工艺</td>
+                                    <td class="zs-parameter-infor">14nm</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">功耗</td>
+                                    <td class="zs-parameter-infor">15W</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">存储设备</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">内存容量</td>
+                                    <td class="zs-parameter-infor">8GB（8GB×1）</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">内存类型</td>
+                                    <td class="zs-parameter-infor">DDR4</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">插槽数量</td>
+                                    <td class="zs-parameter-infor">2xSO-DIMM</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">最大内存容量</td>
+                                    <td class="zs-parameter-infor">32GB（单插槽最高支持16GB）</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">硬盘容量</td>
+                                    <td class="zs-parameter-infor">256GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">硬盘描述</td>
+                                    <td class="zs-parameter-infor">SSD固态硬盘</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">光驱类型</td>
+                                    <td class="zs-parameter-infor">无内置光驱</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">显示屏</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">触控屏</td>
+                                    <td class="zs-parameter-infor">不支持触控</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">屏幕尺寸</td>
+                                    <td class="zs-parameter-infor">14英寸</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">显示比例</td>
+                                    <td class="zs-parameter-infor">16:9</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">屏幕分辨率</td>
+                                    <td class="zs-parameter-infor">1920x1080</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">屏幕技术</td>
+                                    <td class="zs-parameter-infor">FHD，LED背光，6.9mm边框，180度开合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">显卡</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">显卡类型</td>
+                                    <td class="zs-parameter-infor">性能级独立显卡</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">显卡芯片</td>
+                                    <td class="zs-parameter-infor">AMD Radeon RX 550X</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">显存容量</td>
+                                    <td class="zs-parameter-infor">2GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">显存类型</td>
+                                    <td class="zs-parameter-infor">GDDR5</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">显存位宽</td>
+                                    <td class="zs-parameter-infor">128bit</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">多媒体设备</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">摄像头</td>
+                                    <td class="zs-parameter-infor">720p HD摄像头</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">音频系统</td>
+                                    <td class="zs-parameter-infor">内置音效芯片</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">扬声器</td>
+                                    <td class="zs-parameter-infor">内置扬声器</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">麦克风</td>
+                                    <td class="zs-parameter-infor">内置麦克风</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">网络通信</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">无线网卡</td>
+                                    <td class="zs-parameter-infor">内置无线网卡</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">有线网卡</td>
+                                    <td class="zs-parameter-infor">1000Mbps以太网卡</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">蓝牙</td>
+                                    <td class="zs-parameter-infor">支持蓝牙功能</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">I/O接口</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">数据接口</td>
+                                    <td class="zs-parameter-infor">1×USB2.0+2×USB3.0，USB Type-C接口</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">视频接口</td>
+                                    <td class="zs-parameter-infor">HDMI</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">音频接口</td>
+                                    <td class="zs-parameter-infor">耳机/麦克风二合一接口</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">其它接口</td>
+                                    <td class="zs-parameter-infor">RJ45（网络接口），电源接口</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">读卡器</td>
+                                    <td class="zs-parameter-infor">Micro SD读卡器</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">输入设备</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">指取设备</td>
+                                    <td class="zs-parameter-infor">多点触摸板，Trackpoint指点杆</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">键盘描述</td>
+                                    <td class="zs-parameter-infor">全尺寸键盘</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">电源描述</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">电池类型</td>
+                                    <td class="zs-parameter-infor">锂电池</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">续航时间</td>
+                                    <td class="zs-parameter-infor">视具体使用环境而定</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">电源适配器</td>
+                                    <td class="zs-parameter-infor">100V-240V 自适应交流电源适配器</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">外观</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">笔记本重量</td>
+                                    <td class="zs-parameter-infor">1.75Kg</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">长度</td>
+                                    <td class="zs-parameter-infor">329mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">宽度</td>
+                                    <td class="zs-parameter-infor">242mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">厚度</td>
+                                    <td class="zs-parameter-infor">19.9mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">外壳材质</td>
+                                    <td class="zs-parameter-infor">镁铝合金</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">外壳描述</td>
+                                    <td class="zs-parameter-infor">冰原银</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">其他</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">安全性能</td>
+                                    <td class="zs-parameter-infor">安全锁孔</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">散热系统</td>
+                                    <td class="zs-parameter-infor">黑酷散热技术</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">附带软件</td>
+                                    <td class="zs-parameter-infor">正版office家庭和学生版2016</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">笔记本附件</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">包装清单</td>
+                                    <td class="zs-parameter-infor">
+                                        笔记本主机&nbsp;x1<br>电池&nbsp;x1<br>电源适配器&nbsp;x1<br>说明书&nbsp;x1<br>保修卡&nbsp;x1</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">保修信息</th>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">保修政策</td>
+                                    <td class="zs-parameter-infor">全国联保，享受三包服务</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">质保时间</td>
+                                    <td class="zs-parameter-infor">1年</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">质保备注</td>
+                                    <td class="zs-parameter-infor">1年部件和人工，客户送修</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">电话备注</td>
+                                    <td class="zs-parameter-infor">周一至周日 8:30-17:30</td>
+                                </tr>
+                                <tr>
+                                    <td class="zs-parameter-title">详细内容</td>
+                                    <td class="zs-parameter-infor">
+                                        产品免费保修期内，您在中华人民共和国境内（不包括港、澳、台地区）购买并使用的联想公司在中国大陆地区正式发布的产品出现本服务承诺责任范围内的硬件故障，请您首先拨打联想Think报修热线进行报修。保修期限以您购买的产品随机保卡上标注的保修期限为准。保卡不补发，保修期内请妥善保管。<a
+                                            href="https://think.lenovo.com.cn/index.html"
+                                            target="_blank">进入官网&gt;&gt;</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 购买评价开始 -->
+                    <div class="zs-comment-mod" id="zp-tab-user-review">
+                        <a name="orderReview"></a>
+
+                        <!-- 购买评价 -->
+
+                        <div class="detail-head">
+                            <div class="zs-comment-goodsrate clearfix">
+                                <div class="goods-num"><em><b>0</b>%</em>好评率</div>
+                                <ul class="goods-num-list clearfix">
+                                    <li>
+                                        <div class="comment-rate">
+                                            <div class="rate-num" id="goodRate">0%</div>
+                                            <div class="front"></div>
+
+                                            <div class="rotate rotate-left" id="goodRotateLeft" style="display: block;">
+                                                <div class="bg left"></div>
+                                            </div>
+                                        </div>
+                                        <div class="nums"><em>好评</em>（0人）</div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-rate">
+                                            <div class="rate-num" id="middleRate">0%</div>
+                                            <div class="front"></div>
+
+                                            <div class="rotate rotate-left" id="middleRotateLeft"
+                                                style="display: block;">
+                                                <div class="bg left"></div>
+                                            </div>
+                                            <div class="rotate rotate-right" id="middleRotateRight"
+                                                style="display: none;">
+                                                <div class="bg right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="nums"><em>中评</em>（0人）</div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-rate">
+                                            <div class="rate-num" id="badRate">0%</div>
+                                            <div class="front"></div>
+
+                                            <div class="rotate rotate-left" id="badRotateLeft" style="display: block;">
+                                                <div class="bg left"></div>
+                                            </div>
+                                            <div class="rotate rotate-right" id="badRotateRight" style="display: none;">
+                                                <div class="bg right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="nums"><em>差评</em>（0人）</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="zs-comment-filter clearfix">
+                                <span class="cur" value="4">
+                                    <input type="radio" value="4" name="order-review" checked="checked">全部评价 (0)</span>
+                                <span><input type="radio" value="5" name="order-review">晒图 (0)</span>
+                                <span><input type="radio" value="1" name="order-review">好评 (0)</span>
+                                <span><input type="radio" value="2" name="order-review">中评 (0)</span>
+                                <span><input type="radio" value="3" name="order-review">差评 (0)</span>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="intro_cont">
+                            <div id="review_list">
+                                <div class="zs-no-comment-prompt">新品上架，暂未有人评价过，<a href="#top">返回顶部</a>看看商品怎么样</div>
+                            </div>
+                        </div>
+                        <!-- //评价 end -->
+                    </div>
+                    <!-- 购买评价end -->
+
+                    <!-- 成交记录 -->
+                    <div class="zs-purchase-record" id="zp-tab-order-record">
+                        <div class="detail-head">
+                            <div class="title">
+                                <h4>累计成交记录(0)</h4>
+                            </div>
+                            <div class="detail-head-filter clearfix">
+                                <div class="checks">
+                                    <label for="">
+                                        <input type="radio">近30天成交记录(0件)</label>
+                                    <label class="cur" for="">
+                                        <input type="radio" checked="">累计成交记录(0件)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display:block;">
+                            <div class="zs-no-comment-prompt">暂无咨询记录，有问题可以在下面留言给商家</div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- 购买咨询 -->
+                    <div class="zs-message-mod" id="zp-tab-goods-message">
+                        <div class="detail-head">
+                            <div class="title">
+                                <h4 id="messageNumTitle">购买咨询(0)</h4>
+                            </div>
+                            <div class="detail-head-filter clearfix">
+                                <div class="checks">
+                                    <label class="cur" for="">
+
+                                        <input type="radio" checked="" value="10" name="wordsKey">全部咨询</label>
+                                    <label for=""><input type="radio" value="1" name="wordsKey">商品咨询</label>
+                                    <label for=""><input type="radio" value="2" name="wordsKey">库存与配送</label>
+                                    <label for=""><input type="radio" value="3" name="wordsKey">支付问题</label>
+                                    <label for=""><input type="radio" value="4" name="wordsKey">发票与保修</label>
+                                    <label for=""><input type="radio" value="5" name="wordsKey">促销及赠品</label>
+                                    <label for=""><input type="radio" value="6" name="wordsKey">其他</label>
+                                </div>
+                                <a href="javascript:volid(0);" class="ask-link">我要咨询</a>
+                            </div>
+                        </div>
+                        <ul class="ask-list" id="zp-message-list">
+                            <div class="zs-no-comment-prompt">暂无咨询记录，有问题可以在下面留言给商家</div>
+                        </ul>
+                        <a name="guestBook"></a>
+                        <div class="zs-enter-message" id="zp-enter-message" style="display: block;">
+                            <div class="detail-head">
+                                <div class="title">
+                                    <h4>发表咨询</h4><span class="close"></span>
+                                </div>
+                                <div class="detail-head-filter clearfix">
+                                    <div class="checks">
+                                        <label class="cur" for=""><input type="radio" value="1" name="saveWordsKey"
+                                                checked="">商品咨询</label>
+                                        <label for=""><input value="2" name="saveWordsKey" type="radio">库存与配送</label>
+                                        <label for=""><input value="3" name="saveWordsKey" type="radio">支付问题</label>
+                                        <label for=""><input value="4" name="saveWordsKey" type="radio">发票及保修</label>
+                                        <label for=""><input value="5" name="saveWordsKey" type="radio">促销及赠品</label>
+                                        <label for=""><input value="6" name="saveWordsKey" type="radio">其它</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="zs-messagebox">
+                                <textarea name="zs-goods-message-content" id="zp-goods-message-content"></textarea>
+                                <div class="zs-question-foot clearfix" id="message-button">
+                                    <label><input name="zp-goods-message-show" type="checkbox" value="1">仅商家可见</label>
+                                    <span id="submit-content">（选择后，您的留言只有商家可以看到，建议您在询问价格等隐私信息时选择）</span>
+                                    <span class="zs-nopublish-btn">发表留言</span>
+                                    <span class="zs-number" id="limtset"><em>0</em>/200</span>
+                                    <a href="javascript:;" class="zs-publish-btn">发表留言</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 用户留言结束 -->
+                    <!-- z保障+服务保障说明 -->
+                    <div class="zs-service-guarantee" id="zs-service-guarantee">
+                        <div class="zbz-sevice-banner">Z<span class="add-plus">+</span> 服务保障说明</div>
+                        <h4 class="zbz-sevice-title" id="quality"><i class="ico-13"></i>正品保障</h4>
+                        <div class="zbz-service-content">
+                            <p>当您在ZOL商城购买全新产品时，商家承诺所售出商品均为正品行货，如买家所购商品发现假货及非原厂正品商品，买家可以向ZOL商城发起"先行赔付"申请，ZOL商城核实后将进行先行赔付以保障您的合法权益。
+                            </p>
+                        </div>
+
+                        <h4 class="zbz-sevice-title" id="peifu"><i class="ico-1"></i>先行赔付</h4>
+                        <div class="zbz-service-content">
+                            <dl>
+                                <dt>1、先行赔付规则：</dt>
+                                <dd>当您在ZOL商城购买全新产品时，若因该交易导致您的权益受损，且在您直接要求商家处理未果的情况下，您可以向ZOL商城发起"先行赔付"申请，ZOL商城核实后将进行先行赔付以保障您的合法权益。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>2、先行赔付条件：</dt>
+                                <dd>1、只有您在ZOL商城购买并且有购买凭据（购买凭据包括：电子订单、购货发票等）的商品可申请先行赔付；<br>2、确保申请赔付的商品必须与卖家销售的商品为同一件；<br><span
+                                        style="color:#c00;">注：买家不按照ZOL商城的交易流程而完成的交易不在"先行赔付"保障范围内；</span><br>1）
+                                    未收到货情况下，买家提前确认收货的交易；<br>2） 未在ZOL商城提交订单，擅自与卖家在线下付款完成的交易；</dd>
+                            </dl>
+                            <dl>
+                                <dt>3、先行赔付流程：</dt>
+                                <dd> <img src="http://icon.zol-img.com.cn/newshop/shop/detail/youdian/img-3.png"
+                                        width="650" height="77"> </dd>
+                            </dl>
+                            <dl>
+                                <dt>4、先行赔付标准：</dt>
+                                <dd>
+                                    <table class="punishment-way">
+                                        <tbody>
+                                            <tr>
+                                                <th class="cell-1">问题分类</th>
+                                                <th class="cell-2">问题描述</th>
+                                                <th class="cell-3">赔付方式</th>
+                                                <th class="cell-4">受理时间</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">商品保证</td>
+                                                <td class="cell-2">如买家所购商品发现假货及非原厂正品商品或商品本身有质量问题的</td>
+                                                <td class="cell-3">先行赔付问题订单的总金额（假一赔三不包含在此项处罚中）</td>
+                                                <td class="cell-4">收货15天内</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">如实描述</td>
+                                                <td class="cell-2">如卖家对商品的描述、参数与实际不符的</td>
+                                                <td class="cell-3">先行赔付问题订单的总金额</td>
+                                                <td class="cell-4">收货15天内</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">物流配送</td>
+                                                <td class="cell-2">如卖家未提供满399包邮服务，向您收取物流费用的</td>
+                                                <td class="cell-3">先行赔付问题订单产生的运费</td>
+                                                <td class="cell-4">收货15天内</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">发票保障</td>
+                                                <td class="cell-2">如卖家未履行所承诺的发票保障服务的，未按规定提供正规发票或提供假发票的</td>
+                                                <td class="cell-3">先行赔付问题订单的总金额</td>
+                                                <td class="cell-4">收货15天内</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">售后服务</td>
+                                                <td class="cell-2">如卖家未履行7天无理由退货、15天换货售后服务，或发货后一直没有收到商品的</td>
+                                                <td class="cell-3">先行赔付问题订单的总金额</td>
+                                                <td class="cell-4">收货15天内</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="color:#c00;">注： 产品均需在订单完成出现对应问题后发起先行赔付服务，否则商城将不按先行赔付处理。</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>5、先行赔付受理时间：</dt>
+                                <dd>买家向ZOL商城申请"先行赔付"服务，需严格按照受理时限进行申请，超时商城将不与受理，并且不承担任何责任。</dd>
+                            </dl>
+                        </div>
+
+                        <h4 class="zbz-sevice-title" id="hour-24"><i class="ico-3"></i>24小时发货</h4>
+                        <div class="zbz-service-content">
+                            <p>当您在ZOL商城中购买商品时，商家承诺您所下的订单，将在24小时内进行发货（部分商家节假日不发货）。</p>
+                            <dl>
+                                <dt>1、如何跟踪配送信息</dt>
+                                <dd>配送信息您可点击查询"物流状态"即可查询到您所购买的商品的在途情况或者请您点击对应的物流承运商网站进行查询，快递单号可以登陆ZOL商城账号的订单管理中获取，建议发货后48小时后进行查询。
+                                </dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title" id="wuliu"><i class="ico-6"></i>物流配送</h4>
+                        <div class="zbz-service-content">
+                            <p>当您在ZOL商城购买产品时，商家承诺全店商品满399元且收货地址在商家指定的物流公司所覆盖的派送区域内，均采用商家指定的物流公司为消费者提供免费物流配送服务；如收货地址不在商家指定的物流公司派送范围内时，商家则使用其它可送达快递为消费者提供免费物流配送服务。如在商家店铺未购买达到399元，除商家优惠外，物流费用由买家自己承担。
+                            </p>
+                            <dl>
+                                <dt>1、赔付保障权益</dt>
+                                <dd>如商家在规定的范围内向您收取物流费用，您可根据ZOL商城"先行赔付"进行维权、获得赔偿。</dd>
+                            </dl>
+                            <dl>
+                                <dt>2、买家须知</dt>
+                                <dd> 1.&nbsp;&nbsp;如收货地址不在商家指定的物流公司派送范围内时，且在商家店铺购买达到399元，商家可使用其快递为消费者提供免费物流配送服务； <br>
+                                    2.&nbsp;&nbsp;寄递物品违反禁、限寄规定或有关运输管理条例，经有关部门没收或依照有关法规、规定处理的，不在补偿范围内； <br>
+                                    3.&nbsp;&nbsp;商家指定的物流公司的配送范围以本页公示的范围为准。港澳台及海外地区，大陆地区的部队（含武警）或受部队（含武警）管制的等商家指定的物流公司不予收送快件的机构不在配送范围内。
+                                </dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title" id="fapiao"><i class="ico-5"></i>发票保障</h4>
+                        <div class="zbz-service-content">
+                            <p>买家在zol商城购买商品时，所购买商品可提供正规商品发票。且使用该服务不向买家收取任何其他费用。</p>
+                            <dl>
+                                <dt>1、赔付保障权益</dt>
+                                <dd>如商家未履行所承诺的发票保障服务，您可根据ZOL商城"先行赔付"进行维权、获得赔偿。</dd>
+                            </dl>
+                            <dl>
+                                <dt>2、开发票的注意事项</dt>
+                                <dd>1.发票金额不能高于订单金额。 <br>
+                                    2.为了享受厂商提供的质保服务，商品发票开具为产品明细。（售后服务需根据发票确认您的购买日期，发票内容默认为您订购的商品明细。）
+                                    3.使用优惠券、积分的金额不开具发票。
+                                    4.销售产品均可开具正规机打发票（普通增值税发票），无需加税点，但为了保证发票不遗漏和错开，请下订单时在补充说明（或者卖家留言），留言注明：需开发票抬头XXX公司或者XXX人名。如忘记注明，请及时联系客服帮助备注。
+                                    5.如果您收到的发票与您输入的开票信息、订单信息不一致，请及时联系010-83417888-9185
+                                    6.未经ZOL商城允许，客服部门将不接受电话、传真、邮件、邮寄等形式的重开发票申请，如您擅自将发票寄到我公司的任一办公地址，在寄送过程中发生的发票遗失、缺失等情况，概不负责。
+                                </dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title" id="shfw"><i class="ico-7"></i>售后服务</h4>
+                        <div class="zbz-service-content">
+                            <p>凡在ZOL商城购买产品，售出产品有非人为质量问题凭有效检测报告、不影响商家二次销售的情况下可享受商品在自售出之日（以实际收货日期为准）起7日内无理由退换货、15日内换货的服务。如商家未履行所承诺的售后服务，您可根据ZOL商城"先行赔付"进行维权、获得赔偿。
+                            </p>
+                            <dl>
+                                <dt>特别声明</dt>
+                                <dd>本站ZOL商城所出售商品的商品详情信息及包装参数信息均由卖家自行设计、制作并通过ZOL商城向其开放的数据端口自行发布，其真实性、准确性和合法性由卖家负责。本站保证ZOL商城所出售商品均为原厂正品行货，但因生产厂家可能会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本站不能确保用户收到的货物与本站展示的图片、产地、附件说明完全一致。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>价格声明</dt>
+                                <dd>购买价：购买价为商品的销售价，是您最终决定是否购买商品的依据。划线价：商品展示的划横线价，可能是如官方网站零售价、厂商指导价、厂商建议零售价、销售商门店挂牌价；由于地区、时间的差异性和市场行情波动，可能会与您购物时展示的不一致，该价格仅供您参考。折扣价：折扣指卖家在划线价（如官方网站零售价、厂商指导价、厂商建议零售价、销售商门店挂牌价）等某一价格基础上计算出的优惠比例或优惠金额。促销价：商品促销信息以商品详情页“促销”信息为准；商品的具体售价以订单结算页价格为准；如您发现商品售价或促销信息有异常，建议购买前先联系销售商咨询。
+                                </dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title" id="tuihuo"><i class="ico-8"></i>退换货说明</h4>
+                        <div class="zbz-service-content">
+                            <dl>
+                                <dt>1、退换货成立条件：</dt>
+                                <dd> 1）&nbsp;&nbsp;商品在国家三包政策范围内并且不影响二次销售。 <br>
+                                    2）&nbsp;&nbsp;经由生产厂家认可的售后服务中心或国家认可的第三方质检平台检测确认的非人为商品质量问题，并出具检测报告(检测报告需由维权方出具，如维权方当地无检测条件的请联系卖家是否提供代检测服务)。
+                                    <br>
+                                    3）&nbsp;&nbsp;当您购买的商品需要办理退换货时，商家会根据退换货规则在24小时内为您审核。 </dd>
+                            </dl>
+                            <dl>
+                                <dt>2、退换货服务流程：</dt>
+                                <dd> <img src="http://icon.zol-img.com.cn/newshop/shop/detail/youdian/img-4.png"
+                                        width="650" height="271"> </dd>
+                            </dl>
+                            <dl>
+                                <dt>3、退换货商品引起的运费问题:</dt>
+                                <dd> 1）&nbsp;&nbsp;非商品质量问题而由买家发起的七天无理由退换货行为，买家退货的商品应当完好，退回商品的来回所有运费由买家承担。如因商品质量问题而导致的7天退货，15天换货行为，退回商品的所有来回运费均由卖家承担。卖家和买家另有约定的，按照约定。
+                                    <br>
+                                    2）&nbsp;&nbsp;售后商品经过检测后无质量问题，可以正常使用，商家一律使用顺丰到付返回。 <br>
+                                    3）&nbsp;&nbsp;退、换商品经售后检测无质量问题寄回后，如在7天内问题依然出现，将按上次的申请生效，请联系商家说明并将商品寄回，商家承担来回运费。 <br>
+                                    4）&nbsp;&nbsp;商城会根据检测结果判定谁来支付检测费用。 </dd>
+                            </dl>
+                            <dl>
+                                <dt>4、赔付保障权益</dt>
+                                <dd>如商家未履行所承诺的无理由退换货服务，您可根据ZOL商城"先行赔付"进行维权、获得赔偿。</dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title"><i class="ico-9"></i>如何退款</h4>
+                        <div class="zbz-service-content">
+                            <dl>
+                                <dt>1、退款流程：</dt>
+                                <dd> <img src="http://icon.zol-img.com.cn/newshop/shop/detail/youdian/img-5.png"
+                                        width="650" height="346"> </dd>
+                            </dl>
+                            <dl>
+                                <dt>2、退款说明</dt>
+                                <dd>取消订单退款：如果您完成支付后取消订单，ZOL商城会在订单取消完成后1天内处理您的退款。如果您只取消了部分商品，会在剩余商品发货完成后1天内处理您的退款。</dd>
+                            </dl>
+                            <dl>
+                                <dt>3、赔付保障权益</dt>
+                                <dd>如商家未履行所承诺的退款服务，您可根据ZOL商城"先行赔付"进行维权、获得赔偿。</dd>
+                            </dl>
+                            <dl>
+                                <dt>4、退款方式</dt>
+                                <dd>
+                                    <table class="refund-way">
+                                        <tbody>
+                                            <tr>
+                                                <th class="cell-1">支付方式</th>
+                                                <th class="cell-2">退款方式</th>
+                                                <th class="cell-3">退款处理时限</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">支付宝</td>
+                                                <td class="cell-2">支付宝账户</td>
+                                                <td class="cell-3">1-2个工作日</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">网上银行</td>
+                                                <td class="cell-2">原借记卡帐户</td>
+                                                <td class="cell-3">5-7个工作日</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-1">信用卡</td>
+                                                <td class="cell-2">原借记卡帐户</td>
+                                                <td class="cell-3">7-15个工作日</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><strong>注意：</strong>银行退款处理时限仅供您参考，具体退款到账时间依各银行、支付机构等的具体操作处理时间而定。</p>
+                                    <p><strong>各银行退款限制</strong> </p>
+                                    <ul class="refund-limit">
+                                        <li>支付宝不受理90天以前支付成功订单的退款申请</li>
+                                        <li>建设银行不受理148天以前支付成功订单的退款申请</li>
+                                        <li>中信银行信用卡不受理228天以前支付成功订单的退款申请</li>
+                                        <li>浦发银行不受理同一支付成功订单的多次退款申请</li>
+                                        <li>民生银行、浦发银行、中国邮政、中国农业银行不受理85天以前支付成功订单的退款申请</li>
+                                        <li>其他银行不受理365天前支付成功订单的退款申请</li>
+                                        <li>浦发银行、华夏银行、中国邮政不受理同一支付成功订单的多次退款申请</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title"><i class="ico-10"></i>交易条款</h4>
+                        <div class="zbz-service-content">
+                            <p>Zol商城为增加买家与商家双方之间的信任与交流，规避交易过程中的风险和受骗可能，确保您和商家不受损失。ZOL商城采用统一收款方式来保障买家与卖家的双方利益。</p>
+                            <p>1、客户在接受商品订购与送货的同时，在您消费之前有义务遵守以下交易条款。请您仔细阅读以下条款。</p>
+                            <dl>
+                                <dt>1）&nbsp;&nbsp;变化性</dt>
+                                <dd>由于价格波动不可预知，以订单提交付款时的价格为标准；</dd>
+                            </dl>
+                            <dl>
+                                <dt>2）&nbsp;&nbsp;准确性</dt>
+                                <dd> 清楚准确地填写您的真实姓名、送货地址及联系方式；因如下情况造成订单延迟或无法配送等，ZOL商城将不承担责任； <br>
+                                    1.客户提供错误信息和不详细的地址； <br>
+                                    2.货物送达无人签收，由此造成的重复配送所产生的费用及相关的后果； <br>
+                                    3.不可抗力，例如：自然灾害、交通戒严、突发战争等。 </dd>
+                            </dl>
+                            <dl>
+                                <dt>3）&nbsp;&nbsp;安全性</dt>
+                                <dd>我们会保证交易信息的安全。</dd>
+                            </dl>
+                            <dl>
+                                <dt>4）&nbsp;&nbsp;&nbsp;&nbsp;隐私权</dt>
+                                <dd>ZOL商城尊重您的隐私权，在任何情况下，我们都不会将您的个人和订单信息出售或泄露给任何第三方（国家司法机关调取除外）。我们从线上得到的所有客户信息仅用来处理您的相关订单。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>5）&nbsp;&nbsp;免责</dt>
+                                <dd>如因不可抗力或其它ZOL商城无法控制的原因使本平台销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，ZOL商城会尽可能合理地协助处理善后事宜，并努力使客户免受经济损失。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>6）&nbsp;&nbsp;客户监督</dt>
+                                <dd>ZOL商城希望通过不懈努力，为客户提供优质服务，我们在给客户提供服务的全过程中接受客户的监督。</dd>
+                            </dl>
+                            <dl>
+                                <dt>7）&nbsp;&nbsp;争议处理</dt>
+                                <dd>如果客户与ZOL商家之间发生任何争议，可依据当时双方所认定的协议或相关法律来解决。</dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title" id="chengnuo"><i class="ico-11"></i>服务承诺</h4>
+                        <div class="zbz-service-content">
+                            <dl>
+                                <dt style="color:red">特别声明:</dt>
+                                <dd>本站ZOL商城所出售商品的商品详情信息及包装参数信息均由卖家自行设计、制作并通过ZOL商城向其开放的数据端口自行发布，其真实性、准确性和合法性由卖家负责。本站保证ZOL商城所出售商品均为原厂正品行货，但因生产厂家可能会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本站不能确保用户收到的货物与本站展示的图片、产地、附件说明完全一致。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt style="color:red">价格声明:</dt>
+                                <dd>购买价：购买价为商品的销售价，是您最终决定是否购买商品的依据。划线价：商品展示的划横线价，可能是如官方网站零售价、厂商指导价、厂商建议零售价、销售商门店挂牌价；由于地区、时间的差异性和市场行情波动，可能会与您购物时展示的不一致，该价格仅供您参考。折扣价：折扣指卖家在划线价（如官方网站零售价、厂商指导价、厂商建议零售价、销售商门店挂牌价）等某一价格基础上计算出的优惠比例或优惠金额。促销价：商品促销信息以商品详情页“促销”信息为准；商品的具体售价以订单结算页价格为准；如您发现商品售价或促销信息有异常，建议购买前先联系销售商咨询。
+                                </dd>
+                            </dl>
+                        </div>
+                        <h4 class="zbz-sevice-title" style="display:none;"><i class="ico-12"></i>常见问题</h4>
+                        <div class="zbz-service-content" style="display:none;">
+                            <dl>
+                                <dt>1、什么是定制机？</dt>
+                                <dd>定制机和非定制机在硬件上完全一致，定制的只是手机软件内容，内嵌移动运营商旗下的增值服务，为消费者提供简单，方便、快捷的服务，完全不影响正常使用，都属正规渠道的原厂机。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>2、什么是合约机？</dt>
+                                <dd>合约机是指通讯运营商与手机生产商共同定制的手机类型，用户使用该手机必须和指定运营商签约，而且要一次性付清交租机款（大多以存话费的名义交清）。购买运营商的合约机器后，会送一定金额的话费，所送话费金额是根据客户所选合约按月返还的！
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>3、什么是欧版、亚太版、日版？</dt>
+                                <dd>是指销售地区在除中国香港、中国大陆地区外的海外市场,其质量和使用方面无任何影响,
+                                    硬件配置跟国行基本一样，使用起来也并无区别，带中文，插卡即用，欧版、亚太版、日版等统称海外版。</dd>
+                            </dl>
+                            <dl>
+                                <dt>4、所售的手机为何会出现开封的情况？</dt>
+                                <dd>因所售手机版本内有欧版、亚太版、日版等其它版本，需先拆封激活后才能通过海关送到中国，采购到的手机在发货前会进行验机，原厂(欧版、亚太版原装)手机软件都会升级为简体中文版，和国内行货一样都是有简体中文，激活看屏幕有无坏线、死点，质检合格后才会安排发货。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>5、手机制式常识：</dt>
+                                <dd> <img src="http://icon.zol-img.com.cn/newshop/shop/detail/youdian/img-6.png"
+                                        width="650" height="382"> </dd>
+                            </dl>
+                            <dl>
+                                <dt>6、怎么判断一款手机可以用哪种手机卡？</dt>
+                                <dd>手机能用哪种手机卡是由手机的网络制式决定的。每款手机都会标明网络制式，不同制式适用的手机卡如下：
+                                    <p>GSM：支持中国联通和中国移动2G号段（131、132、134、135、136、137、138、139、151、156、158、159、186、188）</p>
+                                    <p>CDMA：支持中国电信2G号段（133、153、189）</p>
+                                    <p>GSM/WCDMA：支持中国联通和中国移动2G号段，以及中国联通3G号段（131、132、134、135、136、137、138、139、151、156、158、159、186、188）
+                                    </p>
+                                    <p>GSM/TD-SCMDA：支持中国联通和中国移动2G号段，以及中国移动3G号段(131、132、134、135、136、137、138、139、151、156、158、159、186、188）
+                                    </p>
+                                    <p>CDMA/CDMA2000：支持中国电信2G号段，以及中国电信3G号段（133、153、189）</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>7、为什么主机上显示的内存容量比参数上写的小？</dt>
+                                <dd>商品参数上标明的是硬件本身v的容量。手机出厂之前都会预装操作系统，操作系统会占用部分机身内存（ROM）。系统占用部分的机身内存是不显示的，Android操作系统的机制是只显示剩余机身内存。机身内存剩余多少和系统自带的应用软件数量也有关，你安装一款软件，内存就减少一部分。因此，手机上显示的机身内存容量会小于商品参数标明的容量。在手机启动后，系统会预留部分运行内存（RAM）给GPU、显示模块、音频播放、编解码等需要连续大块物理内存的应用，这部分的运行内存是不能释放出来的，而安装软件占用的运行内存是可以释放出来的。平板的情况与手机相同。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>8、手机发热是什么原因？</dt>
+                                <dd> 1. 手机上网时射频电路及CPU都在高频运转，功耗较大，会有一定量的发热。 <br>
+                                    2. 在手机充电时，因为有大量电流流过（充电电流一般有1安培），机身及电池会在46度左右是很正常的。 <br>
+                                    3. 在玩游戏、看电影时因手机CPU在高速运转手机会发热，发热区域集中在摄像头周围，这与电脑是同样的道理。 <br>
+                                    4.
+                                    发热现象也与周围环境也有关，在夏天因为外界环境较高，体感会觉得手机温度稍微高一些。手机出厂的温升要求都会满足国家的安规相关标准，只要不感觉明显烫手，手机不发出异味或壳体出现变形，基本都是正常的发热范围，请您放心使用。如果想减轻发热量，则充电时尽量不要使用手机上网或玩大型游戏，通话尽量选择插入耳机。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- // 右侧导航栏 -->
+                <div class="zs-sidebar" id="zsSidebar">
+                    <div class="zs-quick-menu">
+                        <ul class="introduct" id="introduct">
+                            <li class="">
+                                <a href="javascript:;" class="goods-introduct">商品介绍</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="serve-promise"><span class="add-plus"></span>服务详情</a>
+                            </li>
+                        </ul>
+
+                        <ul class="serve-nav">
+                            <li><a href="javascript:;">正品保障</a></li>
+                            <li><a href="javascript:;">先行赔付</a></li>
+
+                            <li><a href="javascript:;">24小时发货</a></li>
+                            <li><a href="javascript:;">物流配送</a></li>
+                            <li><a href="javascript:;">发票保障</a></li>
+
+                            <li><a href="javascript:;">售后服务</a></li>
+                            <li><a href="javascript:;">服务承诺</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer-service-relate clearfix">
+                <dl class="cooperation">
+                    <dt>招商合作</dt>
+                    <dd>
+                        <p>助力3C零售商互联网转型</p>
+                        <p>开启新零售时代全新旅程！</p>
+                        <a href="" class="btn" target="_blank"><span>查看详细</span>&gt;</a>
+                    </dd>
+                </dl>
+                <dl class="hotline">
+                    <dt>010-83417888-9185</dt>
+                    <dd>
+                        <p>工作日 9:00 - 18:00</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>
+                        <p><a href="" target="_blank">帐号管理</a></p>
+                        <p><a href="" target="_blank">购物帮助</a></p>
+                        <p><a href="" target="_blank">付款方式</a></p>
+
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <p><a href="" target="_blank">先行赔付</a></p>
+                        <p><a href="" target="_blank">退款退货流程</a></p>
+                        <p><a href="" target="_blank">投诉举报</a></p>
+                        <p><a href="" target="_blank">退款、售后</a></p>
+
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商城保障</dt>
+                    <dd>
+                        <p><a href="" target="_blank">正品保障</a></p>
+                        <p><a href="" target="_blank">物流配送</a></p>
+                        <p><a href="" target="_blank">24小时发货</a></p>
+                        <p><a href="" target="_blank">发票保障</a></p>
+
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商家服务</dt>
+                    <dd>
+                        <p><a href="" target="_blank">商家中心</a></p>
+
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-nav-bar">
+            <div class="wrapper">
+                <div class="footer-nav">
+                    <a href="" target="_blank">中关村在线</a> | <a href="" target="_blank">Z商城</a> | <a href=""
+                        target="_blank">团购</a> | <a href="" target="_blank">产品报价</a> | <a href="" target="_blank">论坛</a>
+                    | <a href="" target="_blank">问答</a> </div>
+                <div class="copyright">
+                    <a href="" target="_blank">关于Z商城</a> | <a href="" target="_blank">帮助中心</a> | <a href=""
+                        target="_blank">联系我们</a> </div>
+                <div class="copyright">
+                    <span style="margin-left:-5px;">
+                        ©2019 中关村在线 版权所有.
+                        <a href="" target="_blank">京ICP证150096号</a>
+                        京ICP备14061128号
+                        <a href="" target="_blank">网络文化经营许可证京网文[2016]1631-199</a>
+                    </span>
+                </div>
+                <div class="focus-area clearfix">
+                    <div class="wechat"><img src="http://icon.zol-img.com.cn/newshop/shop/index/qr.png" width="100"
+                            height="100" alt=""></div>
+                    <a target="_blank" class="weibo" href="">关注新浪微博</a>
+                </div>
+            </div>
+            <a
+                style="color:#fff;background:#666;border-radius:3px;-webkit-border-radius:3px;float:right;margin-right:50px;padding:0 8px;">广告</a>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/detail.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,619 @@
+@charset "utf-8";
+
+
+body,
+dd,
+dl,
+dt,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+li,
+ol,
+p,
+em,
+select,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Microsoft YaHei, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    font-style: normal;
+}
+select, input, button {
+    vertical-align: middle;
+    font-size: 100%;
+}
+body {
+    font-size: 12px;
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+a {
+    color: #134ba0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+img {
+    display: block;
+
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    z-index: 997;
+    background: #f5f5f5;
+
+}
+
+.step{
+    padding: 30px 0;
+}
+.logo {
+    float: left;
+}
+.flow-step {
+    float: right;
+    padding: 2px 0 0;
+}
+.flow-step li {
+    background: url(http://icon.zol-img.com.cn/newshop/order/step-bg.png) no-repeat;
+}
+.flow-step-1 .s1 {
+    background-position: 100% -37px;
+    background-color: #e02d2d;
+    color: #fff;
+    padding: 0 14px;
+}
+
+.flow-step li {
+    float: left;
+    width: 90px;
+    padding: 0 14px 0 0;
+    background-position: 100% -74px;
+    background-color: #e6e6e6;
+    font: 14px/36px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    text-align: center;
+}
+
+.cart-state {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.cart-state p {
+    padding: 7px 0 10px 0;
+}
+
+.cart-state p em {
+    padding: 0 0 0 10px;
+    color: #666;
+}
+
+.cart-state .total {
+    height: 22px;
+    line-height: 22px;
+    color: #666;
+}
+.cart-state input, .security-a{
+    background: url(http://icon.zol-img.com.cn/newshop/merchant/telecom/pic1.png) no-repeat;
+}
+.cart-state input {
+    float: right;
+    width: 58px;
+    height: 22px;
+    background-position: -192px -150px;
+    border: 0 none;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-state .total span {
+    float: right;
+    padding: 0 8px 0 0;
+    line-height: 24px;
+    color: #999;
+}
+
+.cart-state .total em {
+    padding: 0 2px 0 0;
+    color: #ff0000;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.order-table{
+    margin-top: 20px;
+}
+
+.order-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.order-table .th-1 {
+    width: 62px;
+}
+
+.order-table th {
+    height: 36px;
+    background: #f5f5f5;
+    border-top: 2px solid #e02d2d;
+    line-height: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.order-table .th-2 {
+    width: 217px;
+    padding: 0 0 0 100px;
+    text-align: left;
+}
+
+.order-table .th-3 {
+    width: 122px;
+}
+
+.order-table .th-4 {
+    width: 106px;
+}
+
+.order-table .th-5 {
+    width: 121px;
+}
+
+.order-table .th-6 {
+    width: 107px;
+}
+
+.order-table .th-7 {
+    width: 81px;
+}
+
+.order-table .store-infor {
+    height: 43px;
+    padding: 10px 0 0 0;
+    border: 0 none;
+    background: #fff;
+}
+
+.shopname {
+    float: left;
+    line-height: 43px;
+}
+
+.contact {
+    float: left;
+    padding: 11px 0 0 15px;
+}
+
+.tag-security {
+    float: left;
+    margin: 0 -9px 0 0;
+    padding: 0 0 0 20px;
+    line-height: 22px;
+    background: url(http://icon.zol-img.com.cn/newshop/merchant/tag-security.png) no-repeat 0 50%;
+    color: #666;
+}
+.contact a {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.kong{
+    display: none;
+}
+
+.shopcar-tip {
+    height: 145px;
+    padding: 45px 0 12px 169px;
+    background: url(http://icon.zol-img.com.cn/zol_shop/order/images_20120628/shopcar.png) no-repeat 60px 45px;
+}
+
+.shopcar-tip dt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    line-height: 40px;
+}
+
+.shopcar-tip dd {
+    line-height: 24px;
+}
+
+.shopcar-tip dd a {
+    margin: 0 7px;
+}
+.order-table .s-infor {
+    padding: 10px 10px 10px 12px;
+    width: 357px;
+    border-left: 1px solid #e3e3e3;
+}
+.s-infor input {
+    float: left;
+    margin: 24px 10px 0 0;
+}
+
+.s-infor .pic {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    line-height: 58px;
+    text-align: center;
+    background: #fff;
+}
+
+.s-infor .pic img {
+    vertical-align: middle;
+}
+.s-infor .inforbox {
+    float: left;
+    width: 240px;
+    padding: 0 0 0 10px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.s-infor .inforbox .tit {
+    margin: -2px 0 4px;
+    height: 40px;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 12px;
+    overflow: hidden;
+}
+.cart-lists{
+    width: 100%;
+}
+.security {
+    padding: 5px 0;
+}
+.security-a, .security-b, .security-c, .security-d, .security-e {
+    float: left;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-right: 5px;
+}
+.security-a {
+    background-position: 0 -286px;
+}
+
+.s-infor .inforbox p {
+    color: #666;
+}
+
+.s-infor .info-con {
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+}
+
+.s-infor .info-con span {
+    cursor: pointer;
+}
+
+.s-infor .info-con .info-help {
+    display: none;
+}
+
+.s-infor .info-help {
+    position: absolute;
+    left: 36px;
+    top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+}
+
+.s-infor .info-help h5 {
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 0 6px;
+}
+
+.s-infor .info-help p {
+    white-space: nowrap;
+    line-height: 22px;
+}
+
+.order-table td {
+    padding: 10px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+}
+.s-price {
+    width: 102px;
+}
+.s-amount {
+    width: 130px;
+}
+
+.s-old-price {
+    display: block;
+    padding-top: 13px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.buy-num {
+    position: relative;
+    width: 110px;
+    height: 20px;
+    padding: 31px 0;
+    text-align: center;
+}
+.minus, .no-minus {
+    margin: 5px 8px 0 10px;
+}
+
+.minus, .plus {
+    float: left;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.text-amount {
+    width: 28px;
+    height: 16px;
+    float: left;
+    padding: 1px 3px;
+    text-align: right;
+}
+
+.plus {
+    margin: 5px 0 0 8px;
+}
+
+.buy-num .tips-2 {
+    position: absolute;
+    left: 7px;
+    bottom: 3px;
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background: #ff7373;
+    white-space: nowrap;
+    display: none;
+}
+
+.s-agio {
+    width: 101px;
+}
+
+.s-agio span.icon {
+    background-color: #ce1a1b;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 3px;
+}
+
+.time span {
+    color: #ce1a1b;
+}
+.order-foot .accounting-btn{
+    background: url(http://icon.zol-img.com.cn/newshop/merchant/telecom/pic1.png) no-repeat;
+}
+.s-total {
+    width: 87px;
+}
+.s-total em {
+    color: #ff0000;
+    font-family: "verdana";
+}
+.order-table .s-del {
+    border-right: 1px solid #e3e3e3;
+}
+.s-del {
+    width: 61px;
+}
+
+.s-delbox {
+    position: relative;
+}
+
+.s-del a {
+    display: block;
+    line-height: 20px;
+}
+.deletebox {
+    width: 144px;
+    padding: 6px 10px;
+    position: absolute;
+    top: -60px;
+    left: -50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 18px;
+    color: #666;
+    display: none;
+}
+
+.s-del .deletebox a {
+    margin: 0 12px;
+    display: inline-block;
+    color: #3366cc;
+    cursor: pointer;
+}
+.s-del .deletebox em{
+    margin: 0 12px;
+    display: inline-block;
+    color: #3366cc;
+    cursor: pointer;
+}
+
+.total-price {
+    padding: 0 10px 0 0;
+    height: 52px;
+    line-height: 52px;
+    text-align: right;
+}
+
+.total-price span {
+    color: #666;
+}
+
+.total-price em {
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.order-foot {
+    position: relative;
+    padding: 0 0 0 12px;
+    height: 33px;
+    border: 1px solid #e3e3e3;
+    line-height: 33px;
+}
+.order-foot .go-shopping {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    margin: 0;
+    font-family: "simsun";
+}
+
+.order-foot .accounting-btn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 130px;
+    height: 35px;
+    font: 18px/35px "Microsoft YaHei";
+    color: #fff;
+    border: 0 none;
+    background-position: 0 -113px;
+    cursor: pointer;
+}
+
+.modgoods{
+    margin-top: 20px;
+}
+
+.modgoods-tab {
+    border-bottom: 1px solid #e3e3e3;
+}
+.modgoods-tab li {
+    float: left;
+    width: 129px;
+    height: 33px;
+    margin: 0 5px 0 0;
+    border: 1px solid #e3e3e3;
+    border-bottom: 0 none;
+    background: #f6f6f6;
+    text-align: center;
+    font: 16px/33px "Microsoft YaHei";
+    cursor: pointer;
+}
+.modgoods-tab .cur {
+    margin: 0 5px -1px 0;
+    position: relative;
+    border-top: 2px solid #e02d2d;
+    background: #fff;
+    cursor: auto;
+}
+
+.modgoods-tabbox {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-top: 0 none;
+}
+
+.modgoods-list {
+    padding: 20px 0 13px 14px;
+}
+
+.footer {
+    margin: 40px auto 0;
+    padding: 5px 0 20px;
+    width: 960px;
+    text-align: center;
+    border-top: 1px solid #e3e3e3;
+}
+
+.footer .links {
+    padding: 14px 0 6px;
+    color: #ccc;
+}
+
+.footer .links a {
+    margin: 0 10px;
+}
+
+.footer p .copyright {
+    color: #333;
+}
+
+.authentication {
+    padding-top: 12px;
+}
+
+.authentication a {
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+}
+.authentication a img{
+    width: 108px;
+    height: 40px;
+}
+
+a:hover{
+    color: #c00;
+    text-decoration: underline;
+}
+
+.flow-step .s5 {
+    padding: 0;
+    background: #e6e6e6;
+}

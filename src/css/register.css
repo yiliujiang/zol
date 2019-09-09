@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+body,
+dd,
+dl,
+dt,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+li,
+ol,
+p,
+em,
+select,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Microsoft YaHei, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    font-style: normal;
+}
+
+body {
+    font-size: 12px;
+    color: #333;
+}
+
+a {
+    color: #134ba0;
+    text-decoration: none;
+}
+img {
+    display: block;
+
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+
+}
+
+.wrapper {
+    width: 990px;
+    margin: 0 auto;
+}
+.header {
+    padding-top: 14px;
+    padding: 20px 0;
+}
+
+.register-bar {
+    float: right;
+    padding: 21px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+.register-bar a {
+    float: right;
+    height: 16px;
+    padding: 3px 10px;
+    color: #c00;
+    font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+.logo {
+    float: left;
+}
+.header .logo a {
+    float: left;
+}
+
+.header .logo a img {
+    float: left;
+    width: 130px;
+    height:60px;
+}
+.header .logo p {
+    float: left;
+    margin: 8px 0 0 8px;
+    padding-left: 10px;
+    font: 14px/44px simsun;
+    color: #666;
+    border-left: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+
+.register-wrap {
+    padding: 0 0 100px;
+    border: 1px solid #e6e6e6;
+    width: 980px;
+    margin: auto;
+}
+
+.register-wrap .title {
+    padding: 16px 0 16px 90px;
+    background: #fafafa;
+    font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+    color: #999;
+}
+
+.register-module {
+    float: left;
+    padding: 30px 0 0 89px;
+    width: 500px;
+}
+
+.register-tab {
+    height: 39px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.login-layer-btn, .submit-loading, .login-foot .sina, .login-foot .qq, .login-foot .alipay, .login-foot .baidu, .login-wrong-tips, .case-tips .ico, .form-item .remove, .register-btn {
+    background: url(https://login.zol.com/image/bg.png) no-repeat;
+}
+.download-list a, .fast-login-list a, .register-tab span, .get-captcha, .register-form .right-tips, .register-form .wrong-tips {
+    background: url(https://login.zol.com/image/login-bg.png) no-repeat;
+}
+.register-tab .current {
+    margin: 0 -1px -1px;
+    padding: 0 0 2px;
+    border-top: 2px solid #e02d2d;
+    background: #fff;
+    cursor: default;
+}
+.register-tab .current .phone-number {
+    padding: 0 0 0 20px;
+    background-position: -158px -235px;
+}
+.register-tab li {
+    float: left;
+    position: relative;
+    margin: 0 -1px;
+    width: 250px;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0 none;
+    background: #fafafa;
+    text-align: center;
+    cursor: pointer;
+}
+.register-tab .current span {
+    color: #c00;
+    line-height: 36px;
+}
+
+.register-tab span {
+    display: inline-block;
+    font: 18px/38px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+
+.register-phone-number, .register-email {
+    padding: 30px 0 0;
+}
+
+.register-form {
+    position: relative;
+    margin: 0 0 42px;
+    padding: 0 0 0 83px;
+    zoom: 1;
+}
+
+.register-form .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    font: 14px/40px "Arial";
+    text-align: right;
+    color: #666;
+}
+
+.register-form .label .xh {
+    padding: 0 7px 0 0;
+    font-size: 12px;
+    font-family: "Simsun";
+    color: #f30;
+}
+
+.register-form .text {
+    display: block;
+    margin: 0 10px 0 0;
+    padding: 8px 5px;
+    width: 278px;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+
+.register-form .right-tips {
+    display: none;
+    position: absolute;
+    top: 12px;
+    left: 383px;
+    width: 15px;
+    height: 15px;
+    font: 0/0 "Arial";
+    background-position: -155px -162px;
+}
+.codenum{
+    display: none;
+    width: 48px;
+    height: 38px;
+    color: #666;
+    cursor: pointer;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    margin-left:10px;
+    line-height: 40px;
+    font-size:18px;
+    text-align: center;
+}
+
+.register-form .wrong-tips {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 383px;
+    padding: 0 0 0 20px;
+    font: 12px/40px "Arial";
+    color: #ff3333;
+    background-position: -155px -184px;
+    white-space: nowrap;
+}
+
+.register-form .tips {
+    position: absolute;
+    top: 47px;
+    left: 83px;
+    color: #aaa;
+}
+
+.register-form .sms-captcha .text {
+    float: left;
+    width: 108px;
+}
+
+.get-captcha {
+    float: left;
+    width: 110px;
+    height: 40px;
+    border: 0 none;
+    background-position: 0 -148px;
+    font: 12px/40px "Arial";
+    color: #666;
+    cursor: pointer;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+
+
+.sms-captcha .hint {
+    float: left;
+    padding: 0 0 0 10px;
+    font: 12px/40px "Arial";
+}
+
+.agreement {
+    display: block;
+    padding: 0 0 0 83px;
+    height: 32px;
+    font: 12px/32px "Arial";
+    color: #999;
+}
+.agreement input {
+    margin: 0 8px 0 0;
+}
+
+.register-btn {
+    display: block;
+    margin: 20px 0 0 83px;
+    width: 290px;
+    height: 40px;
+    font: bold 14px/40px "Arial";
+    color: #fff;
+    text-align: center;
+    border: 0 none;
+    background-position: 0 0;
+    cursor: pointer;
+}
+
+.footer {
+    margin: 50px 0 0;
+    padding: 12px 0 25px;
+    border-top: 1px solid #dcdcdc;
+}
+
+.footer .about {
+    float: left;
+    margin: 0 0 0 -10px;
+    color: #ccc;
+}
+
+.footer .about a {
+    margin: 0 10px;
+    color: #666;
+}
+.copyright {
+    float: right;
+    color: #666;
+}

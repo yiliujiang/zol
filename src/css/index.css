@@ -1,0 +1,819 @@
+@charset "utf-8";
+body,
+dd,
+dl,
+dt,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+li,
+ol,
+p,
+select,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Microsoft YaHei, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif
+}
+
+body{
+    font-size: 12px;
+    color: #333;
+    background-color: #f6f6f6;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+
+}
+
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap-logo{
+    padding: 22px 0 10px 0;
+}
+
+
+.login-exit{
+    display: none;
+    line-height: 38px;
+    color: #333;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.search-panel{
+   width: 500px;
+   margin: 0 auto;
+   height: 66px;
+
+}
+.logo{
+    width: 106px;
+    padding-top: 13px;
+    margin-right: 15px;
+    float: left;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.search-panel-fields{
+    padding: 4px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IyMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZjAxMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    height: 30px;
+    border-radius: 3px 0 0 3px;
+    position: relative;
+    padding: 4px 0 4px 4px;
+}
+.search-panel input{
+    width: 369px;
+    color: #999;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid #dedede;
+    outline: 0;
+    height: 18px;
+    line-height: 18px;
+}
+.header{
+    background: #fff;
+}
+.search-panel .s-btn{
+    background: url(http://gtms01.alicdn.com/tps/i1/T1md0kFD4dXXXIDQgy-220-125.png) no-repeat -69px -39px;
+    width: 114px;
+    height: 38px;
+    display: inline-block;
+    border: 0;
+    text-indent: -999em;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+#search_hot{
+    padding-top: 10px;
+}
+#search_hot a{
+    font-size: 12px;
+    color:#666;
+}
+#search_hot a:hover{
+    color:#c00;
+    text-decoration: underline;
+}
+#search_hot .hot{
+    color:#c00;
+}
+
+/* 头部的导航部分 */
+.header-navs{
+    width: 100%;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 0 solid #eee;
+    line-height: 40px;
+    background-color: #fff;
+    /* position: fixed; */
+    color: #333;
+    z-index: 1000;
+}
+
+.header-navs .navs{
+    font-size: 16px;
+    font-weight: 700;
+    float: left
+}   
+
+.header-navs .navs a {
+    margin-right: 50px;
+    color: #333;
+    display: inline-block;
+}
+.header-navs .navs a:hover{
+    color: #f74b44;
+}
+
+.header-navs .navs .active{
+    color: #f74b44;
+}
+.header-navs .navs a:hover{
+    color: #f74b44;
+}
+.loginbox{
+    float: right;
+}
+.login-detail{
+    line-height: 38px;
+    display: inline-block;
+}
+.loginbox a{
+    font-size: 14px;
+    padding: 0 10px;
+    color: #333;
+}
+
+.loginbox .icon-baoliao{
+    background: url(http://icon.zol-img.com.cn/daogou/src/assets/components/header/images/icon-baoliao.png) 0 49% no-repeat;
+    padding-left: 24px!important;
+    margin-right: 20px;
+    color: #333;
+    float: left;
+}
+.loginbox .login{
+    color: #f74b44;
+}
+.loginbox .register{
+    border-left: 1px solid #ccc;
+}
+
+/* 轮播图左边的内容 */
+.class-nav{
+    padding: 6px 3px 4px 3px;
+    width: 184px;
+    height: 367px;
+    color: #333;
+    z-index: 2;
+    padding-bottom: 4px;
+    background-color: #fff;
+}
+.class-nav .class-name{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    text-indent: 12px;
+    margin: 10px 0;
+}
+.class-nav .nav em{
+    border-left: 1px solid #e4e4e4;
+}
+.class-nav a {
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin: 7px 0 10px;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.class-nav .class-names{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    text-indent: 12px;
+    margin: 20px 0 10px;
+}
+
+/* 轮播图部分 */
+.banner-box {
+    width: 1009px;
+    height: 377px;
+    background-color: #f4e5c7;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideBox .hd {
+    height: 18px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    z-index: 1;
+    margin-left: -30px;
+}
+
+.slideBox .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+
+}
+
+.slideBox .hd ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+.slideBox .on{
+    background: #eee;
+    border-color: #eee;
+}
+
+.slideBox .next, .slideBox .prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    display: block;
+    width: 23px;
+    height: 40px;
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/focus/images/icon_03-c9ff8f016c.png) no-repeat 50%;
+    background-position: 7px -52px;
+    background-color: rgba(76,76,76,.3);
+}
+
+.slideBox .next {
+    left: auto;
+    right: 0;
+    background-position: 9px 0;
+}
+
+
+
+/* main部分 */
+
+.main{
+    margin-top: 10px;
+}
+.main-left{
+    width: 890px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* 今日抢购部分 */
+.pic-box{
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    position: relative;
+}
+.title {
+    height: 22px;
+    line-height: 22px;
+}
+.header-tit{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.today-buy{
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/title/images/jinriqianggou-07e20c3114.png) no-repeat;
+    width: 96px;
+    height: 22px;
+    text-indent: -999px;
+}
+
+.tit-tag{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.tit-more{
+    font-size: 12px;
+    color: #999;
+}
+.tit-more:hover{
+    color:#c00;
+    text-decoration: underline;
+}
+.pic-list{
+    margin-top: 20px;
+    margin-left: -20px
+}
+
+.item{
+    width: 154px;
+    margin-left: 20px;
+}
+.item img{
+width: 154px;
+height: auto;
+}
+
+.huimai .item img{
+    width: 154px;
+    height: 154px;
+    }
+
+.item .pic-text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    margin-top: 5px;
+}
+
+ .taday a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+.huimai a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+
+.foot-price{
+    color: #f74b44;
+    padding: 5px 0;
+    font-size: 22px;
+}
+.item .now{
+    font-size: 12px;
+}
+
+.original{
+    margin-left: 10px;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* 会买专辑 */
+.title .header-tit.huimaizhuanji {
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/title/images/huimaizhuanji-74ca0853b2.png) no-repeat;
+    width: 96px;
+    height: 22px;
+    text-indent: -999px;
+}
+
+
+
+/* tab切换 */
+.tab-title {
+    border-bottom: 1px solid #f4f4f4;
+    margin-top: -5px;
+    overflow: hidden;
+}
+
+.tab-title h2 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 40px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.haojia-list{
+    display: block;
+}
+.daren-list{
+    display: none;
+}
+.haowu-list{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.hcolor{
+    color: #f74b44;
+    border-bottom: 1px solid #f74b44;
+}
+
+.refresh-list a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 0 none;
+    width: 154px;
+}
+
+
+
+.info-box {
+    width: 668px;
+    height: 184px;
+    position: relative;
+    margin-left: 20px;
+    float: left;
+}
+
+.f20 {
+    font-size: 20px!important;
+}
+.refresh-list-context .item{
+    width: 850px;
+    margin-top: 20px;
+}
+
+.item-list .info-box h2 a {
+    font-weight: 400;
+    display: inline-block;
+    width: 100%;
+    word-break: break-all;
+    color: #333;
+}
+.info-box h2 a:hover{
+    color: #c00;
+}
+.item-list .pic-text {
+    line-height: 22px;
+    height: 40px;
+    margin-top: 5px;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item .pic-text a.more-txt {
+    color: #477cc8;
+}
+
+.footer-info,.footer-info-fl,.footer-info-fr{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    line-height: 36px;
+}
+.item.item-list .foot-info-fl .name{
+    line-height: 26px
+}
+
+.item.item-list .foot-info-fl .name a {
+    margin-left: 0;
+    color: #666;
+    display: inline-block;
+    margin-left: 10px
+}
+.foot-info-fl .name img, .tit-right-info .name img {
+    width: 26px;
+    height: 26px;
+    display: block;
+    border: 0 none;
+}
+.item.item-list .foot-info-fl .name img {
+    float: left;
+    margin-right: 10px;
+    border-radius: 13px;
+}
+
+.foot-info-fl .collect, .tit-right-info .collect {
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/collect-e27ee0ce6e.png) no-repeat;
+}
+.foot-info-fl span, .tit-right-info span {
+    margin-right: 20px;
+    padding-left: 19px;
+    color: #666;
+}
+
+.foot-info-fl .commit, .tit-right-info .commit {
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/commit-db920cf07d.png) no-repeat;
+}
+
+.item.item-list .foot-info-fr .time {
+    margin-right: 10px;
+    color: #999!
+    
+}
+
+.foot-info-fr a, .foot-info-fr span {
+    margin-left: 20px;
+}
+
+.item.item-list .foot-info-fr .btn {
+    margin-left: 10px;
+    font-size: 16px
+}
+.btn {
+    height: 36px;
+    line-height: 36px;
+    background: #f74b44;
+    padding: 0 20px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+}
+.load {
+    margin: 40px 0;
+}
+.load .loading {
+    display: block;
+    width: 130px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+    background: url(http://icon.zol-img.com.cn/mobile/slide/loading.gif) no-repeat;
+    color: #999;
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+.item.item-list .foot-info-fl .source {
+    color: #333;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 5px;
+    font-size: 14px
+}
+
+.item.item-list .foot-info-fl .source img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.c-red {
+    color: #f74b44!important;
+}
+h2 a font {
+    display: inline-block;
+    margin-left: 10px;
+}
+.info-box-tit{
+    font-size: 20px;
+}
+
+.item.item-list .foot-info-fr .get-coupon {
+    background: #ffa133;
+    color: #fff;
+}
+
+
+/* main右半部分 */
+
+
+.main-right{
+    height: auto;
+    width: 300px;
+}
+
+/* 热搜商店 */
+.stores{
+    padding: 20px;
+    margin: 0 0 10px;
+    background: #fff;
+}
+.stores-policy{
+    margin-top: -20px;
+    float: right;
+}
+.stores-policy a{
+    size: 14px;
+    color: red;
+}
+
+.hot-yuanchuang {
+    width: 260px;
+    height: 84px;
+    overflow: hidden;
+}
+
+.near-store{
+    height: auto;
+    width: 260px;
+    overflow: hidden;
+    margin-top: 10px
+}
+
+.near-store .info-box {
+    position: relative;
+    padding-left: 70px;
+    width: 190px;
+    height: 60px;
+    line-height: 20px;
+}
+
+.near-store .info-box .info-store-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+}
+.near-store .info-box .info-store-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.near-store .pic-text {
+    width: 100%;
+    height: 20px;
+    color: #333;
+    line-height: 22px;
+    font-size: 14px
+}
+
+.single-row-ellipsis {
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+    font-size: 12px;
+    width: 170px;
+}
+
+
+
+.comments-num {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+
+
+
+.star {
+    display: inline-block;
+    position: relative;
+    width: 78px;
+    height: 14px;
+}
+.small-star {
+    width: 55px;
+    height: 11px;
+}
+
+.small-star .star-top {
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/star/images/icon_03-24caa8eb58.png) #fff;
+    background-position: 0 0;
+    z-index: 9;
+}
+
+.star .star-bottom, .star .star-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.small-star .star-bottom {
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/star/images/icon_03-24caa8eb58.png) #fff;
+    background-position: 0 -18px;
+}
+/* main右方团购页面 */
+.group-recommend{
+    margin-top: 10px;
+}
+
+.hot-tuan{
+    margin-left: -20px;
+}
+.hot-tuan .item{
+    width: 120px;
+    margin: 20px 0 0 10px;
+}
+
+.item-right-mol .pic-case a {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+.item-right-mol .pic-case a img{
+    width: 120px;
+    height:auto;
+}
+.item-right-mol .foot-price{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* 右方广告位 */
+
+.ad-top,.ad-bottom{
+    padding: 20px;
+    background: #fff;
+}
+/* 底部的css代码 */
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    line-height: 40px;
+    color: #b8b8b8
+}
+
+.footer a {
+    color: #b8b8b8;
+    padding: 0 9px;
+    border-right: 1px solid #494e41
+}
+
+.footer .none-link {
+    border-right: none
+}
+
+.fixedFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 1200px;
+    z-index: 9
+}
+
+#float-qrcode {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    z-index: 1001;
+}
+
+#float-qrcode .close {
+    position: absolute;
+    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/qrcode/images/icon-close-51c50bda8e.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    left: 50%;
+    bottom: -25px;
+    cursor: pointer;
+    margin-left: -8px;
+}
+
+#float-qrcode .qrcode {
+    background: #fff;
+    width: 100px;
+    padding: 5px;
+    box-shadow: 0 2px 8px 0 rgba(56,96,121,.08);
+    color: #666;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#float-qrcode .qrcode img {
+    vertical-align: top;
+    margin-bottom: 5px;
+    width: 95px;
+    height: 95px;
+}
+
+#float-qrcode .hide{
+    display: none;
+}

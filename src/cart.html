@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/detail-header.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrapper clearfix header-top">
+            <div class="zc-login-info">
+                <span class="zc-back-home">
+                    <a href="http://10.31.157.17/js19075-8week/zol/dist/index.html">商城首页</a>
+                </span>
+                <span class="zc-login">您好</span>  
+                    <a href="javascript:;" class="login-now" >zj_asfai...</a>
+                <span class="login_act">
+                    <a href="" >退出
+                    </a>
+                </span>
+            </div>
+            <ul class="zc-quick-menu">
+                <li>
+                    <a href="jiavascript:;">我的订单</a>
+                </li>
+                <li class="zc-my-center">
+                    <a href="" class="zc-hd">买家中心
+                        <i class="ico"></i>
+                    </a>
+                    <div class="zc-my-center-bd" id="zc-my-center-bd">
+                        <a href="#" style="display:none;">我的优惠券&nbsp;&nbsp;<em>8</em>
+                        </a>
+                        <a href="">关注的店铺&nbsp;&nbsp;
+                            <em id="focusShopNum">30</em>
+                        </a>
+                        <a href="">关注的商品&nbsp;&nbsp;
+                            <em id="focusGoodsNum">49</em>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" id="shop-cart-num">购物车1件</a>
+                </li>
+                <li>
+                    <a href="">帮助中心</a>
+                </li>
+                <li class="zc-separator">|</li>
+                <li class="zc-mobile">
+                    <a href="javascript:;" class="zc-hd zc-mobile-hd">手机商城
+                        <i class="ico"></i>
+                    </a>
+                    <div class="zc-mobile-bd" id="zc-mobile-bd">
+                        <img src="http://icon.zol-img.com.cn/zol_shop_logo/shop_wechat.png">
+                    </div>
+                </li>
+                <li>
+                    <a href="">中关村在线</a>
+                </li>
+                <li><a href="">招商合作</a></li>
+                <li class="lianxikefu">
+                    <a href="javascript:;" class="zc-hd">联系客服
+                        <i class="ico"></i>
+                    </a>
+                    <div class="zc-service-tel">010-83417888-9185</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="step clearfix wrapper">
+        <!--logo样式 -->
+        <div class="logo">
+            <a href="" title="中关村商城">
+                <img src="http://icon.zol-img.com.cn/newshop/shop/index/logo_130x60.png"></a>
+        </div>
+        <div class="flow-step">
+
+            <ul class="flow-step-1">
+                <li class="s1">加入购物车</li>
+                <li class="s2">下订单</li>
+                <li class="s3">去付款</li>
+                <li class="s4">确认收货</li>
+                <li class="s5">评价</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper cart">
+        <form action="" method="post">
+            <div class="cart-state">
+                <p>购物车状态<em class="cart-state-num">（1/30）</em></p>
+                <div class="total">
+                    <input name="submitCart" type="submit" value="去结算">
+                    <span>总计（不含运费）：<em>¥</em>
+                        <em class="total-cart-price">2799</em>
+                    </span>
+                </div>
+            </div>
+            <div class="order-table">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <th class="th-1"><label></label>
+                            </th>
+                            <th class="th-2">所选商品</th>
+                            <th class="th-3">单价（元）</th>
+                            <th class="th-4">数量</th>
+                            <th class="th-5">优惠</th>
+                            <th class="th-6">小计（元）</th>
+                            <th class="th-7">操作</th>
+                        </tr>
+
+                        <tr id="merchant">
+                            <td colspan="7" class=" store-infor clearfix">
+                                <div class="shopname"><input name="merchantId[]" type="radio" rel="forshop"
+                                        value="191490" checked="">店铺：<a href="" target="_blank">甲骨龙旗舰店</a>
+                                </div>
+                                <div class="contact">
+                                    <a class="tag-security" style="margin: 0 -9px 0 0">&nbsp;</a>
+                                </div>
+                                <div class="contact">
+
+                                    <a target="_blank" href="">
+                                        <img src="http://wpa.qq.com/pa?p=2:2900758886:52" alt="点击这里给我发消息"
+                                            title="点击这里给我发消息">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="cart-lists" style="display: none">
+                            <td colspan="2" class="s-infor">
+                                <input name="cartId[]" type="checkbox" value="2975986"class="cart-list-input" checked="">
+                                <!--新增对购物车已下架商品-->
+                                <a href="" class="pic" target="_blank"><img width="80" height="80"
+                                        src=""
+                                        alt=""></a>
+                                <div class="inforbox">
+                                    <h3 class="tit"><a href="" title=""
+                                            target="_blank"class="infora"></a></h3>
+                                    <div class="security clearfix">
+                                        <a href="" title="7天退换货" class="security-a" target="_blank"></a>
+                                    </div>
+
+                                    <p>颜色：默认标配</p>
+                                    <div class="info-con">
+                                        <span>套装：官方标配</span>
+                                        <div class="info-help">
+                                            <h5>官方标配：</h5>
+                                            <p>官方标配</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="s-price ">
+                                <em class="s-old-price"></em>
+                                <em class="new-price"></em>
+
+                            </td>
+                            <td class="s-amount ">
+                                <div class="buy-num">
+
+                                    <a class="minus" href="javascript:;" title="减一">-</a>
+                                    <input type="text" class="text-amount" value="1" id="cartNumber_2975986">
+                                    <a class="plus" href="javascript:;" title="加一">+</a>
+                                    <div class="tips-2" id="tips_2975986" style="display:none;"></div>
+
+                                    <!--新增对购物车已下架商品-->
+                                </div>
+                            </td>
+                            <td class="s-agio">
+                                <span class="icon">团购</span>
+                                <p class="time" end-time="1567670040"><span class="time-hour">99</span>小时<span class="time-min">99</span>分<span class="time-sec">99</span>秒
+                                </p>
+
+
+                            </td>
+                            <td class="s-total">
+                                <em id="cartGoodsPcie_2975986">2799</em>
+                            </td>
+                            <td class="s-del">
+                                <div class="s-delbox">
+                                    <a href="javascript:;" title="移入收藏夹">移入收藏夹</a>
+                                    <a href="javascript:;" class="deletegood">删除</a>
+                                    <div class="deletebox" id="zp-cart-2975986">
+                                        <p>确认要删除该商品吗？</p>
+                                        <a href="javascript:;" class="true">是的</a>
+                                        <em href="javascript:;" class="false">取消</em>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="total-price">商品总价<span>（不含运费）</span>：<em>¥</em><em class="total-cart-price">2799</em></div>
+
+                <div class="order-foot clearfix">
+                    <label>
+                        <a href="javascript:;" class="batch">批量删除</a>
+
+                        <a href="http://10.31.157.17/js19075-8week/zol/dist/index.html" class="go-shopping">&lt;&lt;继续购物</a>
+                        <input type="submit" value="去结算" name="submitCart" class="accounting-btn">
+                    </label></div>
+            </div>
+            <div class="wrapper kong">
+                <dl class="shopcar-tip">
+                    <dt>您的购物车里还没有商品，您可以：</dt>
+                    <dd>去<a href="http://10.31.157.17/js19075-8week/zol/dist/index.html">挑选商品</a></dd>
+                </dl>
+            </div>
+        </form>
+    </div>
+
+    <div class="wrapper" id="zp-goods-recommend">
+        <div class="modgoods">
+            <ul class="modgoods-tab clearfix">
+                <li class="cur">猜你喜欢</li>
+            </ul>
+            <div class="modgoods-tabbox">
+                <ul class="modgoods-list clearfix">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="links">
+            <a target="_blank" href="">关于商城</a>|<a target="_blank" href="">营销中心</a>|<a target="_blank"
+                href="">服务中心</a>|<a target="_blank" href="">联系我们</a>|<a target="_blank" href="">发展历程</a>|<a
+                target="_blank" href="">媒体报道</a></p>
+        <p><span class="copyright">©2019中关村在线 版权所有. 京ICP备09041801号-182 <a target="_blank"
+                    href="">京ICP证010391号</a></span>
+        </p>
+        <div class="authentication">
+            <a target="_blank" href="">
+                <img alt="经营性网站备案信息"
+                    src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png">
+            </a>
+            <a target="_blank" href="">
+                <img alt="海淀网络警察提醒您"
+                    src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png">
+            </a>
+            <a target="_blank" href="" id="___szfw_logo___">
+                <img src="https://search.szfw.org/cert.png?l=CX20111228001277001325">
+            </a>
+        </div>
+    </div>
+<script src="js/cookie.js"></script>
+<script src="jquery.js"></script>
+<script src="js/cart.js"></script>
+</body>
+
+</html>
